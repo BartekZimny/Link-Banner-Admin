@@ -1,7 +1,6 @@
 {
   "name": "task-runner",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
@@ -37,5 +36,14 @@
     "onchange": "^5.2.0",
     "stylelint": "^11.0.0",
     "stylelint-scss": "^3.11.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BartekZimny/Link-Banner-Admin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BartekZimny/Link-Banner-Admin/issues"
+  },
+  "homepage": "https://github.com/BartekZimny/Link-Banner-Admin#readme",
+  "description": ""
 }
