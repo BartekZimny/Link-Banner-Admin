@@ -1,14 +1,32 @@
 /* Colors */
 $color-light: #ffffff;
-$color-deep: #191919;
 $color-dark: #000000;
-$color-text: #9c9c9c;
-$color-background: #e3e3e3;
-$brand-main-color: #ff0000;
-
-/* Font sizes */
-$paragraph-font-size: 16px;
+$color-background: #f0f0f0;
+$color-border: #e3e3e3;
+$color-background-sidebar: #191919;
+$color-text-alpha: #a6a6a6;
+$color-text-beta: #9c9c9c;
+$color-text-gamma: #333333;
+$color-graph-alpha: #f58220;
+$color-graph-beta: #56819f;
+$color-graph-gamma: #04ae00;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$font-text: "Roboto", sans-serif;
+
+/* Font sizes */
+$font-size-alpha: 20px;
+$font-size-beta: 18px;
+$font-size-gamma: 16px;
+$font-size-delta: 14px;
+$font-size-epsilon: 13px;
+
+/* Font weight */
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-bold: 700;
+
+/* Border */
+
+$border-style: 1px solid $color-border;

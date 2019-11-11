@@ -5,15 +5,14 @@
 @import "layout";
 
 /* Components */
+@import "components/buttons";
 @import "components/form_field";
 
 /* Sections */
 @import "sections/sidebar";
 @import "sections/topbar";
-@import "sections/dashboard-statistic";
-@import "sections/dashboard-links";
-@import "sections/personal-data_form";
+@import "sections/general-statistic";
+@import "sections/general-links";
 
 /* Pages / Views */
 @import "pages/dashboard";
-@import "pages/personal-data";

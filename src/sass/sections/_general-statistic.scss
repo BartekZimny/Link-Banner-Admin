@@ -1,0 +1,111 @@
+.general-statistic {
+  background-color: $color-light;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 18px 18px;
+  font-family: $font-text;
+}
+
+.general-statistic .col-12 {
+  padding: 0;
+}
+
+/* title */
+.title {
+  height: 46px;
+  border-bottom: $border-style;
+}
+
+.title h2 {
+  color: $color-text-alpha;
+  font-size: $font-size-gamma;
+  font-weight: $weight-medium;
+  line-height: 42px;
+  text-transform: uppercase;
+  padding-left: 17px;
+  padding-top: 3px;
+}
+
+/* date */
+.date {
+  border-bottom: $border-style;
+}
+
+.date .row {
+  justify-content: center;
+}
+
+.calendar {
+  height: 42px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 0;
+  border: 1px solid $color-border;
+  border-radius: 3px;
+}
+
+.calendar .row {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.calendar .row .col-5 {
+  font-size: $font-size-delta;
+  font-weight: $weight-light;
+  line-height: 42px;
+  letter-spacing: 0;
+  color: $color-text-gamma;
+}
+
+.calendar .row .col-5 span {
+  float: right;
+  color: $color-text-beta;
+}
+
+.shape {
+  border-left: $border-style;
+  height: 30px;
+  margin-top: 6px;
+}
+
+/* chart */
+.chart .row {
+  justify-content: center;
+}
+
+.first-column,
+.second-column,
+.third-column {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.table-inner {
+  height: 42px;
+  font-size: $font-size-gamma;
+  font-family: $font-text;
+  font-weight: $weight-bold;
+  line-height: 42px;
+  letter-spacing: 0;
+  color: $color-text-alpha;
+  border-bottom: $border-style;
+}
+
+.table-inner span {
+  float: right;
+  font-weight: $weight-light;
+  color: $color-text-gamma;
+}
+
+.third-column h2 {
+  font-size: $font-size-gamma;
+  font-weight: $weight-bold;
+  line-height: 42px;
+  letter-spacing: 0;
+  color: $color-text-alpha;
+}
+
+.table img {
+  margin-bottom: 55px;
+}

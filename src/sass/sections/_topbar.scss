@@ -9,11 +9,12 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: $font-text;
 }
 
 li {
   float: right;
-  border-left: 1px solid $color-background;
+  border-left: $border-style;
 }
 
 li a {
@@ -38,13 +39,13 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: $color-light;
-  min-width: 160px;
+  min-width: 184px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: $color-deep;
+  color: $color-text-beta;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -62,14 +63,14 @@ li.dropdown {
 
 li .dropbtn,
 .dropdown-content {
-  font-size: 20px;
-  color: $color-text;
-  font-weight: 400;
+  font-size: $font-size-alpha;
+  color: $color-text-beta;
+  font-weight: $weight-regular;
 }
 
 .icon-wallet:before {
   content: "\0062";
-  font-size: 16px;
+  font-size: $font-size-gamma;
   margin-right: 15px;
 }
 
@@ -93,30 +94,30 @@ li .dropbtn,
   right: 18px;
   height: 8px;
   width: 8px;
-  background-color: #f58220;
+  background-color: $color-graph-alpha;
   border-radius: 50%;
 }
 
 .icon-notification:before {
   content: "\0050";
-  font-size: 16px;
-  color: $color-text;
+  font-size: $font-size-gamma;
+  color: $color-text-beta;
 }
 
 /* profile */
 
 .profile {
-  font-size: 13px;
-  color: #56819f;
-  font-weight: 300;
+  font-size: $font-size-epsilon;
+  color: $color-graph-beta;
+  font-weight: $weight-light;
   padding-top: 11px;
   padding-bottom: 5px;
 }
 
 .icon-profile:before {
   content: "\0056";
-  font-size: 16px;
-  color: $color-text;
+  font-size: $font-size-gamma;
+  color: $color-text-beta;
   margin-right: 15px;
 }
 
