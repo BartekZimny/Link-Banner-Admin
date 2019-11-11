@@ -36,6 +36,11 @@ div:not(.links-table-inner) + .links-table-inner {
 .links-table-inner a {
   font-weight: $weight-light;
   color: $color-graph-beta;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-graph-alpha;
+  }
 }
 
 .links-table-inner {
@@ -47,8 +52,8 @@ div:not(.links-table-inner) + .links-table-inner {
   background-color: $color-background;
 }
 
-.icon-links,
-.icon-trash {
+.links-table-inner .icon-links,
+.links-table-inner .icon-trash {
   opacity: 0;
   color: $color-text-beta;
   transition: $transition;
@@ -59,7 +64,7 @@ div:not(.links-table-inner) + .links-table-inner {
   opacity: 1;
 }
 
-.icon-links:hover,
-.icon-trash:hover {
+.links-table-inner .icon-links:hover,
+.links-table-inner .icon-trash:hover {
   color: $color-graph-alpha;
 }

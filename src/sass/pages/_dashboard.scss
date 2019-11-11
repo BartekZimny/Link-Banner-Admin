@@ -1,14 +1,19 @@
 .container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.top-column,
+.right-column,
+.left-column {
   padding: 0;
 }
 
 .left-column {
-  padding-right: 0;
+  width: 100%;
 }
 
-.right-column {
-  padding-left: 0;
+.general {
+  margin: 78px 0 0 250px;
 }
 
 /* title */
@@ -25,4 +30,5 @@
   text-transform: uppercase;
   padding-left: 17px;
   padding-top: 3px;
+  margin: 0;
 }

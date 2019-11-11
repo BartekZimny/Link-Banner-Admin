@@ -6,176 +6,388 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Admin-panel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" />
     <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-2 left-column">
-          <section class="sidebar"></section>
-        </div>
-        <div class="col-10 right-column">
-          <section class="topbar">
-            <ul>
-              <li>
-                <a href="#" class="quit"><span class="icon-quit"></span></a>
-              </li>
-              <li>
-                <a href="#" class="profile"><span class="icon-profile"></span>Leonardo Dicaprio</a>
-              </li>
-              <li>
-                <a href="#" class="notification"><span class="icon-notification"></span><span class="dot"></span></a>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropbtn"><span class="icon-wallet"></span>$1,500.00<span class="icon-arrow-down"></span></a>
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="general">
-            <div class="general-statistic">
-              <!--TITLE-->
-              <div class="col-12 title">
-                <h2>General statistic</h2>
+    <div class="row">
+      <!--TOP COLUMN-->
+      <div class="col-12 top-column">
+        <section class="topbar">
+          <ul>
+            <li>
+              <a href="#" class="quit"><span class="icon-quit"></span></a>
+            </li>
+            <li>
+              <a href="#" class="profile"><span class="icon-profile"></span>Leonardo Dicaprio</a>
+            </li>
+            <li>
+              <a href="#" class="notification"><span class="icon-notification"></span><span class="dot"></span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn"><span class="icon-wallet"></span>$1,500.00<span class="icon-arrow-down"></span></a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
               </div>
-              <!--CALENDAR-->
-              <div class="col-12 date">
-                <div class="row">
-                  <div class="col-4 calendar">
-                    <div class="row">
-                      <div class="col-5">16.05.2016</div>
-                      <div class="shape"></div>
-                      <div class="col-5">16.05.2016<a href="#"><span class="icon-calendar"></a></span></div>
-                    </div>
-                  </div>
-                  <button class="btn btn-one"><span class="icon-refresh"></span></button>
-                </div>
-              </div>
-              <!--CHART-->
-              <div class="col-12 chart">
-                <div class="row table">
-                  <div class="col-4 first-column">
-                    <div class="col-12 table-inner">Visit Signups<span>124</span></div>
-                    <div class="col-12 table-inner">FTD<span>445</span></div>
-                  </div>
-                  <div class="col-4 second-column">
-                    <div class="col-12 table-inner">Net deposit<span>564</span></div>
-                    <div class="col-12 table-inner">Turn over<span>432</span></div>
-                  </div>
-                  <div class="col-8 third-column">
-                    <h2>Earnings chart</h2>
-                  </div>
-                  <img src="images/chart.png" alt="Chart" />
-                </div>
-              </div>
-            </div>
+            </li>
+          </ul>
+        </section>
+      </div>
 
-            <div class="general-links">
-              <!--TITLE-->
-              <div class="col-12 title">
-                <h2>Links</h2>
+      <!--LEFT COLUMN-->
+      <div class="left-column">
+        <section class="sidebar">
+          <div class="menu">
+            <div class="col-12 menu-logo-hamburger">
+              <a href="#">
+                <img class="logo" src="images/logo.png" alt="logo" />
+              </a>
+              <a href="#" class="hamburger">
+                <div class="menu-ham"></div>
+                <div class="menu-ham"></div>
+                <div class="menu-ham"></div>
+              </a>
+            </div>
+            <div class="col-12 menu-subpages">
+              <ul>
+                <li>
+                  <a href="#" class="menu-general"><span class="icon-general"></span><span class="manu-subpages-title">General</span></a>
+                </li>
+                <li>
+                  <a href="#" class="menu-details"><span class="icon-details"></span><span class="manu-subpages-title">Details</span></a>
+                </li>
+                <li>
+                  <a href="#" class="menu-links"><span class="icon-links"></span><span class="manu-subpages-title">Links</span></a>
+                </li>
+                <li>
+                  <a href="#" class="menu-banners"><span class="icon-banners"></span><span class="manu-subpages-title">Banners</span></a>
+                </li>
+                <li>
+                  <a href="#" class="menu-personaldata"><span class="icon-personaldata"></span><span class="manu-subpages-title">Personal data</span></a>
+                </li>
+                <li>
+                  <a href="#" class="menu-payout"><span class="icon-payout"></span><span class="manu-subpages-title">Payout</span></a>
+                </li>
+                <li>
+                  <a href="#" class="menu-postback"><span class="icon-postback"></span><span class="manu-subpages-title">Postback</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="users">
+            <div class="col-12 users-title">
+              <h3>Your manager</h3>
+            </div>
+            <div class="col-12 users-photo">
+              <a href="#">
+                <span class="dot"></span>
+                <img src="images/user-photo.png" alt="user-photo" />
+                <span class="user-name">Mikhael E.</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--RIGHT COLUMN-->
+      <div class="col-12 right-column">
+        <section class="general">
+          <!--GENERAL STATISTIC-->
+          <div class="general-statistic">
+            <!--TITLE-->
+            <div class="col-12 title">
+              <h2>General statistic</h2>
+            </div>
+            <!--CALENDAR-->
+            <div class="col-12 date">
+              <div class="row">
+                <form class="col-3 calendar">
+                  <form id="form" name="form" class="form-inline">
+                    <div class="row form-group">
+                        <label class="startDate" for="startDate"><input id="startDate" name="startDate" type="text" class="form-control" /><span class="icon-calendar"></span></label>
+                        <div class="form-part"></div>
+                        <label class="endDate" for="endDate"><input id="endDate" name="endDate" type="text" class="form-control" /><span class="icon-calendar"></span></label>
+                    </div>
+                  </form>
+                <button class="btn btn-one"><span class="icon-refresh"></span></button>
               </div>
-              <!--LINKS-->
-              <div class="col-12 links">
-                <div class="row links-inner">
-                  <div class="col-8 button">
-                    <button class="btn btn-two"><span>+ add new</span></button>
-                  </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Home page</div>
-                      <div class="col-5"><a href="#">http://www.homepage.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+            </div>
+            <!--CHART-->
+            <div class="col-12 chart">
+              <div class="row table">
+                <div class="col-4 first-column">
+                  <div class="col-12 table-inner">Visit Signups<span>124</span></div>
+                  <div class="col-12 table-inner">FTD<span>445</span></div>
+                </div>
+                <div class="col-4 second-column">
+                  <div class="col-12 table-inner">Net deposit<span>564</span></div>
+                  <div class="col-12 table-inner">Turn over<span>432</span></div>
+                </div>
+                <div class="col-8 third-column">
+                  <h2>Earnings chart</h2>
+                </div>
+                <img src="images/chart.png" alt="Chart" />
+              </div>
+            </div>
+          </div>
+          <!--GENERAL LINKS-->
+          <div class="general-links">
+            <!--TITLE-->
+            <div class="col-12 title">
+              <h2>Links</h2>
+            </div>
+            <!--LINKS-->
+            <div class="col-12 links">
+              <div class="row links-inner">
+                <!--BUTTON-->
+                <div class="col-8 button">
+                  <button class="btn btn-two"><span>+ add new</span></button>
+                </div>
+                <!--LINKS TABLE-->
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Home page</div>
+                    <div class="col-5"><a href="#">http://www.homepage.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Currently offer</div>
-                      <div class="col-5"><a href="#">http://www.currently.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Currently offer</div>
+                    <div class="col-5"><a href="#">http://www.currently.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Blurpix</div>
-                      <div class="col-5"><a href="#">http://www.blupix.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Blurpix</div>
+                    <div class="col-5"><a href="#">http://www.blupix.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Your Site</div>
-                      <div class="col-5"><a href="#">http://www.yoursite.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Your Site</div>
+                    <div class="col-5"><a href="#">http://www.yoursite.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Google</div>
-                      <div class="col-5"><a href="#">http://www.google.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Google</div>
+                    <div class="col-5"><a href="#">http://www.google.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Facebook</div>
-                      <div class="col-5"><a href="#">http://www.facebook.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Facebook</div>
+                    <div class="col-5"><a href="#">http://www.facebook.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Dashboard</div>
-                      <div class="col-5"><a href="#">http://www.dashboard.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Dashboard</div>
+                    <div class="col-5"><a href="#">http://www.dashboard.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Blurax</div>
-                      <div class="col-5"><a href="#">http://www.blurax.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Blurax</div>
+                    <div class="col-5"><a href="#">http://www.blurax.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Piece of Wine</div>
-                      <div class="col-5"><a href="#">http://www.pieceofwine.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Piece of Wine</div>
+                    <div class="col-5"><a href="#">http://www.pieceofwine.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-5">Twitter</div>
-                      <div class="col-5"><a href="#">http://www.twitter.com</a></div>
-                      <div class="col-1"><a href="#"><span class="icon-links"></span></a></div>
-                      <div class="col-1"><a href="#"><span class="icon-trash"></span></a></div>
+                </div>
+                <div class="col-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-5">Twitter</div>
+                    <div class="col-5"><a href="#">http://www.twitter.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-8 button">
-                    <button class="btn btn-two"><span>+ add new</span></button>
-                  </div>
+                </div>
+                <!--BUTTON-->
+                <div class="col-8 button">
+                  <button class="btn btn-two"><span>+ add new</span></button>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
+
+    <!--SCRIPT-->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script>
+      var bindDateRangeValidation = function(f, s, e) {
+        if (!(f instanceof jQuery)) {
+          console.log("Not passing a jQuery object");
+        }
+
+        var jqForm = f,
+          startDateId = s,
+          endDateId = e;
+
+        var checkDateRange = function(startDate, endDate) {
+          var isValid = startDate != "" && endDate != "" ? startDate <= endDate : true;
+          return isValid;
+        };
+
+        var bindValidator = function() {
+          var bstpValidate = jqForm.data("bootstrapValidator");
+          var validateFields = {
+            startDate: {
+              validators: {
+                notEmpty: { message: "This field is required." },
+                callback: {
+                  message: "Start Date must less than or equal to End Date.",
+                  callback: function(startDate, validator, $field) {
+                    return checkDateRange(startDate, $("#" + endDateId).val());
+                  }
+                }
+              }
+            },
+            endDate: {
+              validators: {
+                notEmpty: { message: "This field is required." },
+                callback: {
+                  message: "End Date must greater than or equal to Start Date.",
+                  callback: function(endDate, validator, $field) {
+                    return checkDateRange($("#" + startDateId).val(), endDate);
+                  }
+                }
+              }
+            },
+            customize: {
+              validators: {
+                customize: { message: "customize." }
+              }
+            }
+          };
+          if (!bstpValidate) {
+            jqForm.bootstrapValidator({
+              excluded: [":disabled"]
+            });
+          }
+
+          jqForm.bootstrapValidator("addField", startDateId, validateFields.startDate);
+          jqForm.bootstrapValidator("addField", endDateId, validateFields.endDate);
+        };
+
+        var hookValidatorEvt = function() {
+          var dateBlur = function(e, bundleDateId, action) {
+            jqForm.bootstrapValidator("revalidateField", e.target.id);
+          };
+
+          $("#" + startDateId).on("dp.change dp.update blur", function(e) {
+            $("#" + endDateId)
+              .data("DateTimePicker")
+              .setMinDate(e.date);
+            dateBlur(e, endDateId);
+          });
+
+          $("#" + endDateId).on("dp.change dp.update blur", function(e) {
+            $("#" + startDateId)
+              .data("DateTimePicker")
+              .setMaxDate(e.date);
+            dateBlur(e, startDateId);
+          });
+        };
+
+        bindValidator();
+        hookValidatorEvt();
+      };
+
+      $(function() {
+        var sd = new Date(),
+          ed = new Date();
+
+        $("#startDate").datetimepicker({
+          pickTime: false,
+          format: "YYYY/MM/DD",
+          defaultDate: sd,
+          maxDate: ed
+        });
+
+        $("#endDate").datetimepicker({
+          pickTime: false,
+          format: "YYYY/MM/DD",
+          defaultDate: ed,
+          minDate: sd
+        });
+
+        //passing 1.jquery form object, 2.start date dom Id, 3.end date dom Id
+        bindDateRangeValidation($("#form"), "startDate", "endDate");
+      });
+    </script>
   </body>
 </html>

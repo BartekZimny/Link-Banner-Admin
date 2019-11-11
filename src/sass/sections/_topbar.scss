@@ -2,9 +2,12 @@
   background-color: $color-light;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 18px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
-ul {
+.topbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,27 +15,29 @@ ul {
   font-family: $font-text;
 }
 
-li {
+.topbar ul li {
   float: right;
   border-left: $border-style;
 }
 
-li a {
+.topbar ul li a {
   display: inline-block;
-  padding: 8px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
   line-height: 42px;
 }
 
-li a:hover,
+.topbar ul li a:hover,
 .dropdown:hover .dropbtn {
   background-color: $color-background;
 }
 
 /* dropdown */
 
-li.dropdown {
-  display: inline-block;
+.dropdown a {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .dropdown-content {
@@ -46,11 +51,12 @@ li.dropdown {
 
 .dropdown-content a {
   color: $color-text-beta;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
   line-height: 21px;
+  padding: 0 0 0 20px;
+  border-bottom: $border-style;
 }
 
 .dropdown-content a:hover {
@@ -58,7 +64,7 @@ li.dropdown {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: grid;
 }
 
 li .dropbtn,
@@ -90,12 +96,12 @@ li .dropbtn,
 
 .notification .dot {
   position: absolute;
+  background-color: $color-graph-alpha;
+  border-radius: 50%;
   top: 18px;
   right: 18px;
   height: 8px;
   width: 8px;
-  background-color: $color-graph-alpha;
-  border-radius: 50%;
 }
 
 .icon-notification:before {
@@ -126,4 +132,10 @@ li .dropbtn,
 .quit {
   padding-top: 11px;
   padding-bottom: 5px;
+}
+
+.icon-quit:before {
+  content: "\0057";
+  font-size: $font-size-gamma;
+  color: $color-text-beta;
 }

@@ -25,30 +25,38 @@
   padding: 0;
   border: $border-style;
   border-radius: 3px;
-}
-
-.calendar .row {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-
-.calendar .row .col-5 {
-  font-size: $font-size-delta;
-  font-weight: $weight-light;
-  line-height: 42px;
-  letter-spacing: 0;
-  color: $color-text-gamma;
-}
-
-.calendar .row .col-5 span {
-  float: right;
   color: $color-text-beta;
 }
 
-.shape {
-  border-left: $border-style;
+.calendar .form-group {
+  height: 42px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.calendar .form-group input {
+  border: none;
+  padding: 10px 0;
+  width: 150px;
+}
+
+.startDate {
+  padding-left: 10px;
+}
+
+.endDate .icon-calendar {
+  padding-right: 10px;
+}
+
+.calendar .form-group .form-part {
+  width: 1px;
   height: 30px;
-  margin-top: 6px;
+  background-color: $color-border;
+}
+
+.picker-open {
+  background-color: $color-light;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* chart */

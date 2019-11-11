@@ -1,5 +1,129 @@
 .sidebar {
-  height: 100vh;
-  background-color: $color-background-sidebar;
+  height: 100%;
+  width: 250px;
+  background-color: $color-background-sidebar-alpha;
   color: $color-light;
+  position: fixed;
+  z-index: 2;
+}
+
+/* MENU */
+
+.sidebar .menu {
+  margin-bottom: 18px;
+  border-bottom: 1px solid $color-text-gamma;
+}
+
+.sidebar .menu,
+.sidebar .users {
+  padding: 0;
+}
+
+.menu-logo-hamburger {
+  height: 60px;
+  overflow: hidden;
+}
+
+.menu-logo-hamburger .logo {
+  padding-left: 5px;
+  padding-top: 20px;
+}
+
+.menu-logo-hamburger .hamburger {
+  display: block;
+  padding-top: 13px;
+  float: right;
+  opacity: 0.6;
+  transition: $transition;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.menu-logo-hamburger .hamburger .menu-ham {
+  width: 25px;
+  height: 2px;
+  background-color: $color-light;
+  margin: 7px 0;
+}
+
+.menu-subpages {
+  padding: 0;
+}
+
+.menu-subpages [class*="icon-"] {
+  vertical-align: middle;
+}
+
+.menu-subpages ul {
+  font-family: $font-text;
+  font-weight: $weight-light;
+  font-size: $font-size-gamma;
+  letter-spacing: 0;
+  line-height: 42px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-subpages ul li a {
+  display: block;
+  margin: 5px 0;
+  color: $color-text-delta;
+  text-decoration: none;
+}
+
+.menu-subpages ul li a:hover {
+  color: $color-light;
+  background-color: $color-background-sidebar-beta;
+  border-left: 4px solid $color-graph-alpha;
+}
+
+.menu-subpages ul li a span {
+  padding-left: 20px;
+}
+
+/* USERS */
+
+.users .users-title h3 {
+  padding-left: 5px;
+  font-size: $font-size-gamma;
+  font-family: $font-text;
+  font-weight: $weight-medium;
+  line-height: 42px;
+  color: $color-text-beta;
+  text-transform: uppercase;
+}
+
+.users .users-photo {
+  position: relative;
+  .dot {
+    position: absolute;
+    background-color: $color-graph-gamma;
+    border-radius: 50%;
+    left: 53px;
+    height: 12px;
+    width: 12px;
+  }
+  img {
+    padding-left: 5px;
+  }
+  a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    font-size: $font-size-delta;
+    font-weight: $weight-light;
+    letter-spacing: 0;
+    color: $color-graph-beta;
+    &:hover {
+      color: $color-graph-alpha;
+    }
+    .user-name {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 10px;
+    }
+  }
 }
