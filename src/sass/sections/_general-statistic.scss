@@ -9,22 +9,6 @@
   padding: 0;
 }
 
-/* title */
-.title {
-  height: 46px;
-  border-bottom: $border-style;
-}
-
-.title h2 {
-  color: $color-text-alpha;
-  font-size: $font-size-gamma;
-  font-weight: $weight-medium;
-  line-height: 42px;
-  text-transform: uppercase;
-  padding-left: 17px;
-  padding-top: 3px;
-}
-
 /* date */
 .date {
   border-bottom: $border-style;
@@ -39,7 +23,7 @@
   margin-top: 35px;
   margin-bottom: 35px;
   padding: 0;
-  border: 1px solid $color-border;
+  border: $border-style;
   border-radius: 3px;
 }
 
