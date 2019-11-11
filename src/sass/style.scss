@@ -8,7 +8,12 @@
 @import "components/form_field";
 
 /* Sections */
-@import "section/registration_form";
+@import "sections/sidebar";
+@import "sections/topbar";
+@import "sections/dashboard-statistic";
+@import "sections/dashboard-links";
+@import "sections/personal-data_form";
 
 /* Pages / Views */
-@import "pages/registration";
+@import "pages/dashboard";
+@import "pages/personal-data";
