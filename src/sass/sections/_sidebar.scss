@@ -42,7 +42,7 @@
 }
 
 .menu-logo-hamburger .hamburger .menu-ham {
-  width: 25px;
+  width: 30px;
   height: 2px;
   background-color: $color-light;
   margin: 7px 0;
@@ -83,6 +83,18 @@
   padding-left: 20px;
 }
 
+.toggled .menu-subpages-title,
+.toggled .menu-logo,
+.toggled .users-title,
+.toggled .user-name {
+  display: none;
+}
+
+.toggled .users-photo {
+  margin-left: -13px;
+  transition: $transition;
+}
+
 /* USERS */
 
 .users .users-title h3 {
@@ -97,6 +109,7 @@
 
 .users .users-photo {
   position: relative;
+
   .dot {
     position: absolute;
     background-color: $color-graph-gamma;
@@ -105,9 +118,11 @@
     height: 12px;
     width: 12px;
   }
+
   img {
     padding-left: 5px;
   }
+
   a {
     display: block;
     margin: 5px 0;
@@ -116,9 +131,11 @@
     font-weight: $weight-light;
     letter-spacing: 0;
     color: $color-graph-beta;
+
     &:hover {
       color: $color-graph-alpha;
     }
+
     .user-name {
       position: absolute;
       top: 50%;

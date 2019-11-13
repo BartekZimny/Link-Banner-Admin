@@ -10,23 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" />
     <link rel="stylesheet" href="vendor/Glyphter.css" type="text/css" />
+    <link rel="stylesheet" href="vendor/simple-sidebar.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-    <div class="row">
+    <div class="row" id="wrapper">
       <!--TOP COLUMN-->
       <div class="col-12 top-column">
-        <section class="topbar">
+        <section class="topbar" id="top-navigation">
           <ul>
-            <li>
-              <a href="#" class="quit"><span class="icon-quit"></span></a>
-            </li>
-            <li>
-              <a href="#" class="profile"><span class="icon-profile"></span>Leonardo Dicaprio</a>
-            </li>
-            <li>
-              <a href="#" class="notification"><span class="icon-notification"></span><span class="dot"></span></a>
-            </li>
+            <li><a href="#" class="quit"><span class="icon-quit"></span></a></li>
+            <li><a href="#" class="profile"><span class="icon-profile"></span>Leonardo Dicaprio</a></li>
+            <li><a href="#" class="notification"><span class="icon-notification"></span><span class="dot"></span></a></li>
             <li class="dropdown">
               <a href="#" class="dropbtn"><span class="icon-wallet"></span>$1,500.00<span class="icon-arrow-down"></span></a>
               <div class="dropdown-content">
@@ -41,13 +36,11 @@
 
       <!--LEFT COLUMN-->
       <div class="left-column">
-        <section class="sidebar">
+        <section class="sidebar" id="sidebar-wrapper">
           <div class="menu">
             <div class="col-12 menu-logo-hamburger">
-              <a href="#">
-                <img class="logo" src="images/logo.png" alt="logo" />
-              </a>
-              <a href="#" class="hamburger">
+              <a href="#" class="menu-logo"><img class="logo" src="images/logo.png" alt="logo" /></a>
+              <a href="#" class="hamburger" id="menu-toggle">
                 <div class="menu-ham"></div>
                 <div class="menu-ham"></div>
                 <div class="menu-ham"></div>
@@ -55,27 +48,13 @@
             </div>
             <div class="col-12 menu-subpages">
               <ul>
-                <li>
-                  <a href="#" class="menu-general"><span class="icon-general"></span><span class="manu-subpages-title">General</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-details"><span class="icon-details"></span><span class="manu-subpages-title">Details</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-links"><span class="icon-links"></span><span class="manu-subpages-title">Links</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-banners"><span class="icon-banners"></span><span class="manu-subpages-title">Banners</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-personaldata"><span class="icon-personaldata"></span><span class="manu-subpages-title">Personal data</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-payout"><span class="icon-payout"></span><span class="manu-subpages-title">Payout</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-postback"><span class="icon-postback"></span><span class="manu-subpages-title">Postback</span></a>
-                </li>
+                <li><a href="#" class="menu-general"><span class="icon-general"></span><span class="menu-subpages-title">General</span></a></li>
+                <li><a href="#" class="menu-details"><span class="icon-details"></span><span class="menu-subpages-title">Details</span></a></li>
+                <li><a href="#" class="menu-links"><span class="icon-links"></span><span class="menu-subpages-title">Links</span></a></li>
+                <li><a href="#" class="menu-banners"><span class="icon-banners"></span><span class="menu-subpages-title">Banners</span></a></li>
+                <li><a href="#" class="menu-personaldata"><span class="icon-personaldata"></span><span class="menu-subpages-title">Personal data</span></a></li>
+                <li><a href="#" class="menu-payout"><span class="icon-payout"></span><span class="menu-subpages-title">Payout</span></a></li>
+                <li><a href="#" class="menu-postback"><span class="icon-postback"></span><span class="menu-subpages-title">Postback</span></a></li>
               </ul>
             </div>
           </div>
@@ -96,7 +75,7 @@
 
       <!--RIGHT COLUMN-->
       <div class="col-12 right-column">
-        <section class="general">
+        <section class="general" id="right-navigation">
           <!--GENERAL STATISTIC-->
           <div class="general-statistic">
             <!--TITLE-->
@@ -287,6 +266,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
 
+
+    <!--DATEPICKER-->
     <script>
       var bindDateRangeValidation = function(f, s, e) {
         if (!(f instanceof jQuery)) {
@@ -387,6 +368,14 @@
 
         //passing 1.jquery form object, 2.start date dom Id, 3.end date dom Id
         bindDateRangeValidation($("#form"), "startDate", "endDate");
+      });
+    </script>
+
+    <!--Manu Toggle Script-->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
       });
     </script>
   </body>

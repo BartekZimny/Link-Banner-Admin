@@ -54,6 +54,10 @@
   background-color: $color-border;
 }
 
+.bootstrap-datetimepicker-widget {
+  display: none;
+}
+
 .picker-open {
   background-color: $color-light;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
