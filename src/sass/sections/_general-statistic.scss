@@ -1,7 +1,7 @@
 .general-statistic {
+  margin-bottom: 18px;
   background-color: $color-light;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 18px 18px;
   font-family: $font-text;
 }
 
@@ -22,7 +22,7 @@
     }
 
     .form-group {
-      justify-content: center;
+      justify-content: space-around;
     }
   }
 }
@@ -65,10 +65,10 @@
   justify-content: center;
 
   .col-md-10 {
+    margin-top: 35px;
+    margin-bottom: 35px;
     .first-column,
     .second-column {
-      margin-top: 35px;
-      margin-bottom: 35px;
       justify-content: center;
     }
 
@@ -89,9 +89,6 @@
         color: $color-text-gamma;
       }
     }
-  }
-
-  .col-md-12 {
     .chart-graph {
       margin: 35px auto;
       position: relative;

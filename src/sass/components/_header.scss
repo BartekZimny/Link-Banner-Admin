@@ -1,0 +1,15 @@
+.header {
+  height: 46px;
+  border-bottom: $border-style;
+
+  h2 {
+    color: $color-text-alpha;
+    font-size: $font-size-gamma;
+    font-weight: $weight-medium;
+    line-height: 42px;
+    text-transform: uppercase;
+    padding-left: 17px;
+    padding-top: 3px;
+    margin: 0;
+  }
+}

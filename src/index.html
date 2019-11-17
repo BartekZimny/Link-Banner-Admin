@@ -13,282 +13,427 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
   <body>
-    <div class="row main">
-      <!--TOP COLUMN-->
-      <div class="col-12 top-column">
-        <section class="topbar" id="top-navigation">
+    <!--TOPBAR-->
+    <section class="topbar">
+      <ul>
+        <li>
+          <a href="#" class="quit"><span class="icon-quit"></span></a>
+        </li>
+        <li>
+          <a href="#" class="profile"><span class="icon-profile"></span><span class="profile-name">Leonardo Dicaprio</span></a>
+        </li>
+        <li>
+          <a href="#" class="notification"><span class="icon-notification"></span><span class="dot"></span></a>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><span class="icon-wallet"></span>$1,500.00<span class="icon-arrow-down"></span></a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!--SIDEBAR-->
+    <section class="sidebar">
+      <div class="menu">
+        <div class="col-12 menu-logo-hamburger">
+          <a href="#" class="menu-logo"><img class="logo" src="images/logo.png" alt="logo"/></a>
+          <a href="#" class="hamburger">
+            <div class="menu-ham"></div>
+            <div class="menu-ham"></div>
+            <div class="menu-ham"></div>
+          </a>
+        </div>
+        <div class="col-12 menu-subpages">
           <ul>
             <li>
-              <a href="#" class="quit"><span class="icon-quit"></span></a>
+              <a href="#general" class="menu-link active"><span class="icon-general"></span><span class="menu-subpages-title">General</span></a>
             </li>
             <li>
-              <a href="#" class="profile"><span class="icon-profile"></span><span class="profile-name">Leonardo Dicaprio</span></a>
+              <a href="#details" class="menu-link"><span class="icon-details"></span><span class="menu-subpages-title">Details</span></a>
             </li>
             <li>
-              <a href="#" class="notification"><span class="icon-notification"></span><span class="dot"></span></a>
+              <a href="#links" class="menu-link"><span class="icon-links"></span><span class="menu-subpages-title">Links</span></a>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropbtn"><span class="icon-wallet"></span>$1,500.00<span class="icon-arrow-down"></span></a>
-              <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
+            <li>
+              <a href="#banners" class="menu-link"><span class="icon-banners"></span><span class="menu-subpages-title">Banners</span></a>
+            </li>
+            <li>
+              <a href="#personal_data" class="menu-link"><span class="icon-personaldata"></span><span class="menu-subpages-title">Personal data</span></a>
+            </li>
+            <li>
+              <a href="#payout" class="menu-link"><span class="icon-payout"></span><span class="menu-subpages-title">Payout</span></a>
+            </li>
+            <li>
+              <a href="#postback" class="menu-link"><span class="icon-postback"></span><span class="menu-subpages-title">Postback</span></a>
             </li>
           </ul>
-        </section>
+        </div>
       </div>
+      <div class="users">
+        <div class="col-12 users-title">
+          <h3>Your manager</h3>
+        </div>
+        <div class="col-12 users-photo">
+          <a href="#">
+            <span class="dot"></span>
+            <img src="images/user-photo.png" alt="user-photo" />
+            <span class="user-name">Mikhael E.</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      <!--LEFT COLUMN-->
-      <div class="left-column">
-        <section class="sidebar">
-          <div class="menu">
-            <div class="col-12 menu-logo-hamburger">
-              <a href="#" class="menu-logo"><img class="logo" src="images/logo.png" alt="logo"/></a>
-              <a href="#" class="hamburger">
-                <div class="menu-ham"></div>
-                <div class="menu-ham"></div>
-                <div class="menu-ham"></div>
-              </a>
-            </div>
-            <div class="col-12 menu-subpages">
-              <ul>
-                <li>
-                  <a href="#" class="menu-link"><span class="icon-general"></span><span class="menu-subpages-title">General</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-link"><span class="icon-details"></span><span class="menu-subpages-title">Details</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-link"><span class="icon-links"></span><span class="menu-subpages-title">Links</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-link"><span class="icon-banners"></span><span class="menu-subpages-title">Banners</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-link"><span class="icon-personaldata"></span><span class="menu-subpages-title">Personal data</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-link"><span class="icon-payout"></span><span class="menu-subpages-title">Payout</span></a>
-                </li>
-                <li>
-                  <a href="#" class="menu-link"><span class="icon-postback"></span><span class="menu-subpages-title">Postback</span></a>
-                </li>
-              </ul>
+    <!--GENERAL-->
+    <section class="main">
+      <!--GENERAL-->
+      <div class="general subpage" id="general-section">
+        <!--GENERAL STATISTIC-->
+        <div class="general-statistic">
+          <!--TITLE-->
+          <div class="header">
+            <h2>General statistic</h2>
+          </div>
+          <!--CALENDAR-->
+          <div class="date">
+            <div class="row">
+              <div class="col-md-5">
+                <form id="form" name="form" class="form-inline">
+                  <div class="row form-group">
+                    <label class="startDate" for="startDate"><input id="startDate" name="startDate" type="text" class="form-control"/><span class="icon-calendar"></span></label>
+                    <label class="endDate" for="endDate"><input id="endDate" name="endDate" type="text" class="form-control"/><span class="icon-calendar"></span></label>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1">
+                <button class="btn btn-one"><span class="icon-refresh"></span></button>
+              </div>
             </div>
           </div>
-          <div class="users">
-            <div class="col-12 users-title">
-              <h3>Your manager</h3>
-            </div>
-            <div class="col-12 users-photo">
-              <a href="#">
-                <span class="dot"></span>
-                <img src="images/user-photo.png" alt="user-photo" />
-                <span class="user-name">Mikhael E.</span>
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <!--RIGHT COLUMN-->
-      <div class="col-12 right-column">
-        <section class="general" id="right-navigation">
-          <!--GENERAL STATISTIC-->
-          <div class="general-statistic">
-            <!--TITLE-->
-            <div class="header">
-              <h2>General statistic</h2>
-            </div>
-            <!--CALENDAR-->
-            <div class="date">
-              <div class="row">
-                <div class="col-md-5">
-                  <form id="form" name="form" class="form-inline">
-                    <div class="row form-group">
-                      <label class="startDate" for="startDate"><input id="startDate" name="startDate" type="text" class="form-control"/><span class="icon-calendar"></span></label>
-                      <label class="endDate" for="endDate"><input id="endDate" name="endDate" type="text" class="form-control"/><span class="icon-calendar"></span></label>
-                    </div>
-                  </form>
+          <!--CHART-->
+          <div class="chart">
+            <div class="row">
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-md-6 first-column">
+                    <div class="col-md-12 col-lg-10 table-inner">Visit Signups<span>124</span></div>
+                    <div class="col-md-12 col-lg-10 table-inner">FTD<span>445</span></div>
+                  </div>
+                  <div class="col-md-6 second-column">
+                    <div class="col-md-12 col-lg-10 table-inner">Net deposit<span>564</span></div>
+                    <div class="col-md-12 col-lg-10 table-inner">Turn over<span>432</span></div>
+                  </div>
                 </div>
-                <div class="col-md-1">
-                  <button class="btn btn-one"><span class="icon-refresh"></span></button>
+              </div>
+              <div class="col-md-10">
+                <div class="header">
+                  <h2>Earnings chart</h2>
+                </div>
+                <div class="chart-graph">
+                  <img src="images/chart.png" alt="Chart" />
                 </div>
               </div>
             </div>
-            <!--CHART-->
-            <div class="chart">
-              <div class="row">
-                <div class="col-md-10">
+          </div>
+        </div>
+        <!--GENERAL LINKS-->
+        <div class="general-links">
+          <!--TITLE-->
+          <div class="header">
+            <h2>Links</h2>
+          </div>
+          <!--LINKS-->
+          <div class="links">
+            <div class="col-md-12">
+              <div class="row links-inner">
+                <!--BUTTON-->
+                <div class="col-md-6 button">
+                  <button class="btn btn-two"><span>+ add new</span></button>
+                </div>
+                <!--LINKS TABLE-->
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
                   <div class="row">
-                    <div class="col-md-6 first-column">
-                      <div class="col-md-12 col-lg-10 table-inner">Visit Signups<span>124</span></div>
-                      <div class="col-md-12 col-lg-10 table-inner">FTD<span>445</span></div>
+                    <div class="col-4">Home page</div>
+                    <div class="col-6"><a href="#">http://www.homepage.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
                     </div>
-                    <div class="col-md-6 second-column">
-                      <div class="col-md-12 col-lg-10 table-inner">Net deposit<span>564</span></div>
-                      <div class="col-md-12 col-lg-10 table-inner">Turn over<span>432</span></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-12">
-                  <div class="header">
-                    <h2>Earnings chart</h2>
-                  </div>
-                  <div class="chart-graph">
-                    <img src="images/chart.png" alt="Chart" />
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Currently offer</div>
+                    <div class="col-6"><a href="#">http://www.currently.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!--GENERAL LINKS-->
-          <div class="general-links">
-            <!--TITLE-->
-            <div class="header">
-              <h2>Links</h2>
-            </div>
-            <!--LINKS-->
-            <div class="links">
-              <div class="col-md-12">
-                <div class="row links-inner">
-                  <!--BUTTON-->
-                  <div class="col-md-6 button">
-                    <button class="btn btn-two"><span>+ add new</span></button>
-                  </div>
-                  <!--LINKS TABLE-->
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Home page</div>
-                      <div class="col-6"><a href="#">http://www.homepage.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Blurpix</div>
+                    <div class="col-6"><a href="#">http://www.blupix.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Currently offer</div>
-                      <div class="col-6"><a href="#">http://www.currently.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Your Site</div>
+                    <div class="col-6"><a href="#">http://www.yoursite.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Blurpix</div>
-                      <div class="col-6"><a href="#">http://www.blupix.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Google</div>
+                    <div class="col-6"><a href="#">http://www.google.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Your Site</div>
-                      <div class="col-6"><a href="#">http://www.yoursite.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Facebook</div>
+                    <div class="col-6"><a href="#">http://www.facebook.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Google</div>
-                      <div class="col-6"><a href="#">http://www.google.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Dashboard</div>
+                    <div class="col-6"><a href="#">http://www.dashboard.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Facebook</div>
-                      <div class="col-6"><a href="#">http://www.facebook.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Blurax</div>
+                    <div class="col-6"><a href="#">http://www.blurax.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Dashboard</div>
-                      <div class="col-6"><a href="#">http://www.dashboard.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Piece of Wine</div>
+                    <div class="col-6"><a href="#">http://www.pieceofwine.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Blurax</div>
-                      <div class="col-6"><a href="#">http://www.blurax.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Twitter</div>
+                    <div class="col-6"><a href="#">http://www.twitter.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
                     </div>
                   </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Piece of Wine</div>
-                      <div class="col-6"><a href="#">http://www.pieceofwine.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
-                    <div class="row">
-                      <div class="col-4">Twitter</div>
-                      <div class="col-6"><a href="#">http://www.twitter.com</a></div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-links"></span></a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#"><span class="icon-trash"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!--BUTTON-->
-                  <div class="col-md-6 button">
-                    <button class="btn btn-two"><span>+ add new</span></button>
-                  </div>
+                </div>
+                <!--BUTTON-->
+                <div class="col-md-6 button">
+                  <button class="btn btn-two"><span>+ add new</span></button>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-    </div>
+      <!--DETAILS-->
+      <!--LINKS-->
+      <div class="links subpage hidden" id="links-section">
+        <div class="general-links">
+          <!--TITLE-->
+          <div class="header">
+            <h2>Links</h2>
+          </div>
+          <!--LINKS-->
+          <div class="links">
+            <div class="col-md-12">
+              <div class="row links-inner">
+                <!--BUTTON-->
+                <div class="col-md-6 button">
+                  <button class="btn btn-two"><span>+ add new</span></button>
+                </div>
+                <!--LINKS TABLE-->
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Home page</div>
+                    <div class="col-6"><a href="#">http://www.homepage.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Currently offer</div>
+                    <div class="col-6"><a href="#">http://www.currently.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Blurpix</div>
+                    <div class="col-6"><a href="#">http://www.blupix.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Your Site</div>
+                    <div class="col-6"><a href="#">http://www.yoursite.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Google</div>
+                    <div class="col-6"><a href="#">http://www.google.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Facebook</div>
+                    <div class="col-6"><a href="#">http://www.facebook.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Dashboard</div>
+                    <div class="col-6"><a href="#">http://www.dashboard.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Blurax</div>
+                    <div class="col-6"><a href="#">http://www.blurax.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Piece of Wine</div>
+                    <div class="col-6"><a href="#">http://www.pieceofwine.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
+                  <div class="row">
+                    <div class="col-4">Twitter</div>
+                    <div class="col-6"><a href="#">http://www.twitter.com</a></div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-links"></span></a>
+                    </div>
+                    <div class="col-1">
+                      <a href="#"><span class="icon-trash"></span></a>
+                    </div>
+                  </div>
+                </div>
+                <!--BUTTON-->
+                <div class="col-md-6 button">
+                  <button class="btn btn-two"><span>+ add new</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--BANNERS-->
+      <!--PERSONAL DATA-->
+      <!--PAYOUT-->
+      <!--POSTBACK-->
+    </section>
 
     <!--SCRIPT-->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>

@@ -2,44 +2,17 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.top-column,
-.right-column,
-.left-column {
-  padding: 0;
-}
-
-.left-column {
-  width: 100%;
-}
-
-.general {
-  margin: 78px 0 0 250px;
+.main {
+  margin: 78px 18px 18px 268px;
   transition: all 0.5s;
 }
 
-.general.wide {
+.main.wide {
   margin: 78px 0 0 60px;
 }
 
 @media (max-width: 768px) {
-  .general {
+  .main {
     margin-top: 60px;
-  }
-}
-
-/* title */
-.header {
-  height: 46px;
-  border-bottom: $border-style;
-
-  h2 {
-    color: $color-text-alpha;
-    font-size: $font-size-gamma;
-    font-weight: $weight-medium;
-    line-height: 42px;
-    text-transform: uppercase;
-    padding-left: 17px;
-    padding-top: 3px;
-    margin: 0;
   }
 }
