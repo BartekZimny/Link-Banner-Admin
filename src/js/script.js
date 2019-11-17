@@ -31,7 +31,6 @@ for (var j = 0; j < menuPages.length; j++) {
   menuPages[j].addEventListener('click', function() {
     var menuPages = this.getAttribute('href');
     var content = document.querySelector(menuPages + '-section');
-    console.log('content:', content);
     var all = document.querySelectorAll('.subpage');
 
     if (content) {

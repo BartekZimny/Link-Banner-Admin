@@ -109,7 +109,7 @@
                 </form>
               </div>
               <div class="col-md-1">
-                <button class="btn btn-one"><span class="icon-refresh"></span></button>
+                <button class="btn btn-one" type="reset"><span class="icon-refresh"></span></button>
               </div>
             </div>
           </div>
@@ -286,7 +286,7 @@
       <!--DETAILS-->
       <!--LINKS-->
       <div class="links subpage hidden" id="links-section">
-        <div class="general-links">
+        <div class="links-links">
           <!--TITLE-->
           <div class="header">
             <h2>Links</h2>
@@ -431,10 +431,10 @@
       </div>
       <!--BANNERS-->
       <div class="banners subpage hidden" id="banners-section">
-        <div class="general-links">
+        <div class="banners-links">
           <!--TITLE-->
           <div class="header">
-            <h2>Links</h2>
+            <h2>Banners</h2>
           </div>
           <!--LINKS-->
           <div class="links">
@@ -508,7 +508,7 @@
                 <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
                   <div class="row">
                     <div class="col-4">Horizontal banner</div>
-                    <div class="col-6"><a href="#">http://www.website.com/herizontal.gif</a></div>
+                    <div class="col-6"><a href="#">http://www.website.com/horizontal.gif</a></div>
                     <div class="col-1">
                       <a href="#"><span class="icon-links"></span></a>
                     </div>
@@ -527,6 +527,52 @@
         </div>
       </div>
       <!--PERSONAL DATA-->
+      <div class="personal_data subpage hidden" id="personal_data-section">
+        <!--FORM-->
+        <div class="personal_data-form">
+          <!--TITLE-->
+          <div class="header">
+            <h2>Personal data</h2>
+          </div>
+          <form action="" method="POST">
+            <div class="row field">
+              <label class="personal-label" for="name">Name</label>
+              <input id="name" class="personal-input" type="text" placeholder="Leonardo" name="name" required />
+              <label class="personal-label" for="surname">Surname</label>
+              <input id="surname" class="personal-input" type="text" placeholder="Dicaprio" name="surname" required />
+              <label class="personal-label" for="email">E-mail</label>
+              <input id="email" class="personal-input" type="email" placeholder="leo@gmail.com" name="email" required />
+              <label class="personal-label" for="phone">Phone number</label>
+              <input id="phone" class="personal-input" type="text" placeholder="+1 432 555 00 44" name="phone" />
+            </div>
+            <div class="lane"></div>
+            <div class="row field">
+              <label class="personal-label" for="skype">Skype</label>
+              <input id="skype" class="personal-input" type="text" placeholder="Leonardo.D" name="skype" />
+              <label class="personal-label" for="icq">ICQ</label>
+              <input id="icq" class="personal-input" type="text" name="icq" />
+              <label class="personal-label" for="msn">Msn</label>
+              <input id="msn" class="personal-input" type="text" name="msn" />
+            </div>
+            <div class="lane"></div>
+            <div class="row field">
+              <label class="personal-label" for="wallet">Wallet</label>
+              <input id="wallet" class="personal-input" type="number" name="wallet" />
+            </div>
+            <div class="lane"></div>
+            <div class="row field">
+              <label class="personal-label" for="password">Password</label>
+              <input id="password" class="personal-input" type="text" name="password" required />
+              <label class="personal-label" for="repeat">Repeat</label>
+              <input id="repeat" class="personal-input" type="text" name="repeat" required />
+            </div>
+            <div class="lane"></div>
+            <div class="button">
+              <button class="btn btn-two" type="submit"><span>Save</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
       <!--PAYOUT-->
       <!--POSTBACK-->
     </section>
