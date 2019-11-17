@@ -9,59 +9,67 @@
 
 /* MENU */
 
-.sidebar {
-  .menu {
-    margin-bottom: 18px;
-    padding: 0;
-    border-bottom: 1px solid $color-text-gamma;
-    .menu-logo-hamburger {
-      height: 60px;
-      overflow: hidden;
-      .logo {
-        padding-left: 5px;
-        padding-top: 20px;
-      }
-      .hamburger {
-        display: block;
-        padding-top: 13px;
-        float: right;
-        opacity: 0.6;
-        transition: $transition;
-        &:hover {
-          opacity: 1;
-        }
-        .menu-ham {
-          width: 30px;
-          height: 2px;
-          background-color: $color-light;
-          margin: 7px 0;
-        }
-      }
+.sidebar .menu {
+  margin-bottom: 18px;
+  padding: 0;
+  border-bottom: 1px solid $color-text-gamma;
+}
+
+.sidebar .menu .menu-logo-hamburger {
+  height: 60px;
+  overflow: hidden;
+
+  .logo {
+    padding-left: 5px;
+    padding-top: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    padding-top: 13px;
+    float: right;
+    opacity: 0.6;
+    transition: $transition;
+
+    &:hover {
+      opacity: 1;
     }
-    .menu-subpages {
-      padding: 0;
-      ul {
-        font-family: $font-text;
-        font-weight: $weight-light;
-        font-size: $font-size-gamma;
-        letter-spacing: 0;
-        line-height: 42px;
-        list-style-type: none;
-        padding: 0;
-        li a {
-          display: block;
-          margin: 5px 0;
-          color: $color-text-delta;
-          text-decoration: none;
-          &:hover {
-            color: $color-light;
-            background-color: $color-background-sidebar-beta;
-            border-left: 4px solid $color-graph-alpha;
-          }
-          span {
-            padding-left: 20px;
-          }
-        }
+
+    .menu-ham {
+      width: 30px;
+      height: 2px;
+      background-color: $color-light;
+      margin: 7px 0;
+    }
+  }
+}
+
+.sidebar .menu .menu-subpages {
+  padding: 0;
+
+  ul {
+    font-family: $font-text;
+    font-weight: $weight-light;
+    font-size: $font-size-gamma;
+    letter-spacing: 0;
+    line-height: 42px;
+    list-style-type: none;
+    padding: 0;
+
+    li a {
+      display: block;
+      margin: 5px 0;
+      color: $color-text-delta;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-light;
+        background-color: $color-background-sidebar-beta;
+        border-left: 4px solid $color-graph-alpha;
+      }
+
+      span {
+        padding-left: 20px;
       }
     }
   }
@@ -84,54 +92,72 @@
 }
 
 /* USERS */
-.sidebar {
-  .users {
-    padding: 0;
-    .users-title h3 {
+
+.sidebar .users {
+  padding: 0;
+
+  .users-title h3 {
+    padding-left: 5px;
+    font-size: $font-size-gamma;
+    font-family: $font-text;
+    font-weight: $weight-medium;
+    line-height: 42px;
+    color: $color-text-beta;
+    text-transform: uppercase;
+  }
+
+  .users-photo {
+    position: relative;
+
+    .dot {
+      position: absolute;
+      background-color: $color-graph-gamma;
+      border-radius: 50%;
+      left: 53px;
+      height: 12px;
+      width: 12px;
+    }
+
+    img {
       padding-left: 5px;
-      font-size: $font-size-gamma;
-      font-family: $font-text;
-      font-weight: $weight-medium;
-      line-height: 42px;
-      color: $color-text-beta;
-      text-transform: uppercase;
     }
-    .users-photo {
-      position: relative;
 
-      .dot {
+    a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+      font-size: $font-size-delta;
+      font-weight: $weight-light;
+      letter-spacing: 0;
+      color: $color-graph-beta;
+
+      &:hover {
+        color: $color-graph-alpha;
+      }
+
+      .user-name {
         position: absolute;
-        background-color: $color-graph-gamma;
-        border-radius: 50%;
-        left: 53px;
-        height: 12px;
-        width: 12px;
-      }
-
-      img {
-        padding-left: 5px;
-      }
-
-      a {
-        display: block;
-        margin: 5px 0;
-        text-decoration: none;
-        font-size: $font-size-delta;
-        font-weight: $weight-light;
-        letter-spacing: 0;
-        color: $color-graph-beta;
-
-        &:hover {
-          color: $color-graph-alpha;
-        }
-
-        .user-name {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          padding-left: 10px;
-        }
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 10px;
       }
     }
+  }
+}
+
+@media (max-width: 576px) {
+  #wrapper #sidebar-wrapper {
+    width: 100vw;
+  }
+}
+
+@media (max-height: 576px) {
+  .sidebar .menu .menu-subpages ul {
+    line-height: 20px;
+    margin-top: 0;
+  }
+
+  .sidebar .users .users-title {
+    display: none;
   }
 }

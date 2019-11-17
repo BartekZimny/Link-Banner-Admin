@@ -5,28 +5,32 @@
   width: 100%;
   position: fixed;
   z-index: 1;
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-family: $font-text;
+
     li {
       float: right;
       border-left: $border-style;
-      a {
-        display: inline-block;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-decoration: none;
-        line-height: 42px;
-        transition: $transition;
-        &:hover,
-        .dropdown:hover .dropbtn {
-          background-color: $color-background;
-        }
-      }
     }
+  }
+}
+
+.topbar ul li a {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  line-height: 42px;
+  transition: $transition;
+
+  &:hover,
+  .dropdown:hover .dropbtn {
+    background-color: $color-background;
   }
 }
 
@@ -37,6 +41,7 @@
     padding-top: 8px;
     padding-bottom: 8px;
   }
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -47,6 +52,7 @@
     font-size: $font-size-alpha;
     color: $color-text-beta;
     font-weight: $weight-regular;
+
     a {
       color: $color-text-beta;
       text-decoration: none;
@@ -55,11 +61,13 @@
       line-height: 42px;
       padding: 0 0 0 20px;
       border-bottom: $border-style;
+
       &:hover {
         background-color: $color-background;
       }
     }
   }
+
   .dropbtn {
     font-size: $font-size-alpha;
     color: $color-text-beta;
@@ -89,6 +97,7 @@
   position: relative;
   padding-top: 11px;
   padding-bottom: 5px;
+
   .dot {
     position: absolute;
     background-color: $color-graph-alpha;
@@ -138,34 +147,57 @@
 
 @media (max-width: 768px) {
   .topbar ul li a {
-    padding-left: 6px;
-    padding-right: 6px;
     padding-bottom: 0;
     padding-top: 0;
   }
+
   .notification .dot {
-    top: 9px;
-    right: 5px;
+    top: 10px;
     height: 7px;
     width: 7px;
   }
+
   .icon-notification:before,
   .icon-profile:before,
   .icon-quit:before,
   .icon-wallet:before {
     font-size: $font-size-delta;
   }
+
   .dropdown .dropdown-content {
     min-width: 153px;
+
     a {
       line-height: 25px;
     }
   }
+
   li .dropbtn,
   .dropdown-content {
     font-size: $font-size-beta;
   }
+
   .icon-profile:before {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile-name {
+    display: none;
+  }
+
+  .icon-profile:before {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .topbar ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .notification .dot {
+    right: 10px;
   }
 }
