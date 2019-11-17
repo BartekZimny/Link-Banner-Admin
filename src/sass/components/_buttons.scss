@@ -13,7 +13,6 @@
 }
 
 .btn {
-  background-color: $color-graph-alpha;
   color: $color-light;
   border: none;
   border-radius: 3px;
@@ -28,6 +27,7 @@
 }
 
 .btn-one {
+  background-color: $color-graph-alpha;
   font-size: $font-size-gamma;
   width: 40px;
   height: 40px;
@@ -36,6 +36,7 @@
 }
 
 .btn-two {
+  background-color: $color-graph-alpha;
   font-size: $font-size-gamma;
   font-weight: $weight-light;
   line-height: 42px;
@@ -44,4 +45,21 @@
   height: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.btn-three {
+  background-color: $color-text-alpha;
+  font-size: $font-size-gamma;
+  font-weight: $weight-light;
+  line-height: 42px;
+  letter-spacing: 0;
+  width: 127px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.btn-modal {
+  margin-right: 15px;
+  margin-left: 15px;
 }
