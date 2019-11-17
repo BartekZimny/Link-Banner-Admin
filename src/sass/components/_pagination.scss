@@ -1,0 +1,56 @@
+.pagination {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: $font-size-gamma;
+
+  ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      border-radius: 3px;
+      padding: 8px 16px;
+    }
+  }
+}
+
+.pagination a {
+  color: $color-graph-beta;
+  text-decoration: none;
+}
+
+.pagination a:focus,
+.pagination a:hover {
+  color: $color-graph-alpha;
+}
+
+.pagination li.current {
+  background-color: $color-background;
+}
+
+.pagination .disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .pagination {
+    font-size: $font-size-delta;
+  }
+
+  .pagination ul li {
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    font-size: $font-size-epsilon;
+  }
+
+  .pagination ul li {
+    padding: 2px 4px;
+  }
+}

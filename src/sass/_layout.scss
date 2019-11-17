@@ -3,11 +3,11 @@
 *::after {
   box-sizing: border-box;
 }
-/*
-* {
-  outline: none;
+
+body {
+  font-family: $font-text;
 }
-*/
+
 .hidden {
   display: none;
 }

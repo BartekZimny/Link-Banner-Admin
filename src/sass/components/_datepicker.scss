@@ -1,0 +1,60 @@
+/* date */
+.general-statistic .date,
+.details-statistic .date {
+  border-bottom: $border-style;
+
+  .row {
+    justify-content: center;
+
+    .col-md-1 {
+      width: auto;
+    }
+
+    .form-group {
+      justify-content: space-around;
+    }
+  }
+}
+
+.general-statistic .date .row .form-group,
+.details-statistic .date .row .form-group {
+  .startDate,
+  .endDate {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: $border-style;
+    border-radius: 3px;
+    color: $color-text-beta;
+    width: 203px;
+  }
+
+  input {
+    border: none;
+    padding: 11px 0 10px 10px;
+    width: 100px;
+  }
+
+  .icon-calendar {
+    padding: 10px 10px 10px 0;
+    float: right;
+  }
+}
+
+/* date - datepicker style */
+.bootstrap-datetimepicker-widget {
+  display: none;
+}
+
+.picker-open {
+  background-color: $color-light;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .date .row .col-md-5 .form-group .startDate,
+  .date .row .col-md-5 .form-group .endDate,
+  .date .row .col-md-1 .btn-one {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

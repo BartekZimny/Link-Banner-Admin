@@ -55,7 +55,6 @@
   padding: 0;
 
   ul {
-    font-family: $font-text;
     font-weight: $weight-light;
     font-size: $font-size-gamma;
     letter-spacing: 0;
@@ -112,7 +111,6 @@
   .users-title h3 {
     padding-left: 5px;
     font-size: $font-size-gamma;
-    font-family: $font-text;
     font-weight: $weight-medium;
     line-height: 42px;
     color: $color-text-beta;
@@ -159,12 +157,8 @@
 }
 
 @media (max-width: 576px) {
-  .main .sidebar {
+  .sidebar {
     width: 100vw;
-  }
-
-  .main .sidebar.toggled {
-    width: 60px;
   }
 }
 

@@ -12,7 +12,8 @@
 }
 
 @media (max-width: 768px) {
-  .main {
+  .main,
+  .main.wide {
     margin-top: 60px;
   }
 }

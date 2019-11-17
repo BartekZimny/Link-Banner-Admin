@@ -1,0 +1,88 @@
+.table {
+  margin: 20px 40px;
+
+  .details-table {
+    width: 100%;
+    line-height: 60px;
+    text-align: left;
+    font-size: $font-size-delta;
+    border-collapse: collapse;
+
+    .details-title {
+      color: $color-text-alpha;
+      font-weight: 500;
+    }
+  }
+}
+
+.details-table .details-data:hover {
+  background-color: $color-background;
+  transition: $transition;
+}
+
+.details-table .details-title th,
+.details-table .details-data td {
+  border-bottom: $border-style;
+  padding-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  .table .details-table {
+    line-height: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+
+    thead {
+      clip: rect(0 0 0 0);
+      position: absolute;
+    }
+
+    tr {
+      border: $border-style;
+      display: block;
+      margin-bottom: 20px;
+
+      &:hover {
+        border-color: $color-text-gamma;
+      }
+    }
+
+    td {
+      display: block;
+      font-size: 0.8em;
+      text-align: right;
+      padding-right: 10px;
+    }
+  }
+
+  .details-table tr:hover td {
+    border-bottom: 1px solid $color-text-gamma;
+    transition: $transition;
+  }
+
+  .details-table tr:hover td:last-child {
+    border-bottom: 0;
+  }
+
+  .details-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .details-table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .table {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .details-table {
+      max-width: 100%;
+    }
+  }
+}

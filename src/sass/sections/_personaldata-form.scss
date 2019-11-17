@@ -1,13 +1,15 @@
 .personal_data-form {
   background-color: $color-light;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: $font-text;
+
   .lane {
     border-bottom: $border-style;
   }
+
   .field-submit {
     text-align: center;
   }
+
   .field {
     justify-content: center;
     max-width: 600px;
@@ -15,6 +17,7 @@
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: $font-size-gamma;
+
     .personal-label {
       width: 150px;
       height: 40px;
@@ -25,6 +28,7 @@
       font-weight: $weight-bold;
       color: $color-text-alpha;
     }
+
     .personal-input {
       justify-content: space-around;
       padding-left: 20px;
@@ -41,11 +45,13 @@
 @media (max-width: 768px) {
   .personal_data-form .field {
     font-size: $font-size-delta;
+
     .personal-label {
       padding-left: 0;
       margin-bottom: 0;
       text-align: center;
     }
+
     .personal-input {
       margin-top: 0;
       width: 451px;

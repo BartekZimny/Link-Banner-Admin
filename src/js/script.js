@@ -1,5 +1,4 @@
 // Hamburger
-
 function toggleSidebar(visible) {
   document.querySelector('.sidebar').classList.toggle('toggled', visible);
 }
@@ -15,7 +14,6 @@ document.querySelector('.hamburger').addEventListener('click', function(e) {
 });
 
 // Highlight current page
-
 var menuPages = document.getElementsByClassName('menu-link');
 
 for (var i = 0; i < menuPages.length; i++) {
