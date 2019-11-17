@@ -1,10 +1,16 @@
 .sidebar {
-  height: 100%;
+  height: 100vh;
   width: 250px;
   background-color: $color-background-sidebar-alpha;
   color: $color-light;
   position: fixed;
   z-index: 2;
+  transition: all 0.5s;
+}
+
+.sidebar.toggled {
+  width: 60px;
+  transition: all 0.5s;
 }
 
 /* MENU */
@@ -73,6 +79,12 @@
       }
     }
   }
+}
+
+.sidebar .menu .menu-subpages ul li .menu-link.active {
+  color: $color-light;
+  background-color: $color-background-sidebar-beta;
+  border-left: 4px solid $color-graph-alpha;
 }
 
 .menu-subpages [class*="icon-"] {
@@ -146,8 +158,12 @@
 }
 
 @media (max-width: 576px) {
-  #wrapper #sidebar-wrapper {
+  .main .sidebar {
     width: 100vw;
+  }
+
+  .main .sidebar.toggled {
+    width: 60px;
   }
 }
 

@@ -12,18 +12,17 @@
   width: 100%;
 }
 
-.toggled .general {
-  margin: 78px 0 0 60px;
-}
-
 .general {
   margin: 78px 0 0 250px;
   transition: all 0.5s;
 }
 
+.general.wide {
+  margin: 78px 0 0 60px;
+}
+
 @media (max-width: 768px) {
-  .general,
-  .toggled .general {
+  .general {
     margin-top: 60px;
   }
 }
