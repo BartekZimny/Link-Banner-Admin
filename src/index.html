@@ -78,9 +78,9 @@
           <h3>Your manager</h3>
         </div>
         <div class="col-12 users-photo">
-          <a href="#">
+          <a href="#" id="go_chat">
             <span class="dot"></span>
-            <img src="images/user-photo.png" alt="user-photo" />
+            <img src="images/userpic.png" alt="user-pic" />
             <span class="user-name">Mikhael E.</span>
           </a>
         </div>
@@ -872,6 +872,35 @@
           <input id="login_name" class="personal-input" type="text" placeholder="login name">
           <input id="password" class="personal-input" type="password" placeholder="password">
           <button class="btn btn-two btn-modal js--close-modal" type="button"><span>Enter</span></button>
+        </div>
+      </div>
+      <!--CHAT-->
+      <div class="modal" id="modal_chat">
+        <div class="header">
+          <h2>Online chat with your personal manager</h2>
+        </div>
+        <div class="chat-avatar row">
+          <img src="images/userpic.png" alt="manager">
+          <div class="user-status">
+            <span class="user-name">Mikhael E.</span>
+            <br>
+            <img src="images/chatonline.png" alt="online">
+          </div>
+        </div>
+        <div class="chat-message">
+          <div class="message-1">
+            <p class="message-their">Hello. Can I help you?</p>
+          </div>
+          <div class="message-2">
+            <p class="message-me">Hello! I would like to know about Postback.</p>
+          </div>
+          <div class="message-1">
+            <p class="message-their">Ok. 5 min...</p>
+          </div>
+        </div>
+        <div class="chat-send row">
+          <input id="send_message" class="personal-input" type="text" placeholder="Enter the message...">
+          <button class="btn btn-two btn-modal" type="button"><span>Send</span></button>
         </div>
       </div>
     </div>
