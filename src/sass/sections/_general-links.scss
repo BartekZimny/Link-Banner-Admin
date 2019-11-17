@@ -3,48 +3,38 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 0 18px 18px;
   font-family: $font-text;
-}
-
-.general-links .col-12 {
-  padding: 0;
-}
-
-.links .links-inner {
-  justify-content: center;
-}
-
-.button {
-  text-align: center;
-  margin-top: 23px;
-  margin-bottom: 23px;
-}
-
-.links-table-inner {
-  height: 57px;
-  font-size: $font-size-gamma;
-  font-weight: $weight-bold;
-  line-height: 57px;
-  letter-spacing: 0px;
-  color: $color-text-alpha;
-  border-bottom: $border-style;
+  .links {
+    .links-inner {
+      justify-content: center;
+      .button {
+        text-align: center;
+        margin-top: 23px;
+        margin-bottom: 23px;
+      }
+      .links-table-inner {
+        height: 57px;
+        font-size: $font-size-gamma;
+        font-weight: $weight-bold;
+        line-height: 57px;
+        letter-spacing: 0px;
+        color: $color-text-alpha;
+        border-bottom: $border-style;
+        transition: $transition;
+        a {
+          font-weight: $weight-light;
+          color: $color-graph-beta;
+          text-decoration: none;
+          &:hover {
+            color: $color-graph-alpha;
+          }
+        }
+      }
+    }
+  }
 }
 
 div:not(.links-table-inner) + .links-table-inner {
   border-top: $border-style;
-}
-
-.links-table-inner a {
-  font-weight: $weight-light;
-  color: $color-graph-beta;
-  text-decoration: none;
-
-  &:hover {
-    color: $color-graph-alpha;
-  }
-}
-
-.links-table-inner {
-  transition: $transition;
 }
 
 .links-table-inner:hover {
@@ -67,4 +57,25 @@ div:not(.links-table-inner) + .links-table-inner {
 .links-table-inner .icon-links:hover,
 .links-table-inner .icon-trash:hover {
   color: $color-graph-alpha;
+}
+
+@media (max-width: 768px) {
+  .general-links .links .links-inner .links-table-inner {
+    font-size: $font-size-delta;
+    height: 114px;
+    .col-4,
+    .col-6 {
+      padding: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+      height: 30px;
+    }
+    .icon-links,
+    .icon-trash {
+      opacity: 1;
+    }
+    .col-1:nth-of-type(3) {
+      padding-left: 0;
+    }
+  }
 }

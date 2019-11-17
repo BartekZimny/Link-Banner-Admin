@@ -5,55 +5,46 @@
   font-family: $font-text;
 }
 
-.general-statistic .col-12 {
+/* title */
+.general-statistic .title {
   padding: 0;
 }
 
 /* date */
-.date {
-  border-bottom: $border-style;
+.general-statistic {
+  .date {
+    border-bottom: $border-style;
+    .row {
+      justify-content: center;
+      .col-md-1 {
+        width: auto;
+      }
+      .form-group {
+        justify-content: center;
+        .startDate,
+        .endDate {
+          margin-top: 35px;
+          margin-bottom: 35px;
+          border: $border-style;
+          border-radius: 3px;
+          color: $color-text-beta;
+          width: 203px;
+        }
+        input {
+          border: none;
+          padding: 12px 0 10px 10px;
+          width: 100px;
+        }
+        .icon-calendar {
+          padding: 10px 10px 10px 0;
+          float: right;
+        }
+      }
+    }
+  }
 }
 
-.date .row {
-  justify-content: center;
-}
-
-.calendar {
-  height: 42px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  padding: 0;
-  border: $border-style;
-  border-radius: 3px;
-  color: $color-text-beta;
-}
-
-.calendar .form-group {
-  height: 42px;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.calendar .form-group input {
-  border: none;
-  padding: 10px 0;
-  width: 150px;
-}
-
-.startDate {
-  padding-left: 10px;
-}
-
-.endDate .icon-calendar {
-  padding-right: 10px;
-}
-
-.calendar .form-group .form-part {
-  width: 1px;
-  height: 30px;
-  background-color: $color-border;
-}
-
+/* date - datepicker style */
 .bootstrap-datetimepicker-widget {
   display: none;
 }
@@ -64,44 +55,64 @@
 }
 
 /* chart */
-.chart .row {
-  justify-content: center;
+.general-statistic {
+  .chart {
+    .row {
+      justify-content: center;
+      .col-md-10 {
+        .first-column,
+        .second-column {
+          margin-top: 35px;
+          margin-bottom: 35px;
+          justify-content: center;
+        }
+        .table-inner {
+          margin: auto;
+          height: 42px;
+          font-size: $font-size-gamma;
+          font-family: $font-text;
+          font-weight: $weight-bold;
+          line-height: 42px;
+          letter-spacing: 0;
+          color: $color-text-alpha;
+          border-bottom: $border-style;
+          span {
+            float: right;
+            font-weight: $weight-light;
+            color: $color-text-gamma;
+          }
+        }
+      }
+      .col-md-12 {
+        .chart-graph {
+          margin: 35px auto;
+          position: relative;
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+          }
+        }
+        .header {
+          border-bottom: none;
+          margin-top: 35px;
+        }
+      }
+    }
+  }
 }
 
-.first-column,
-.second-column,
-.third-column {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.table-inner {
-  height: 42px;
-  font-size: $font-size-gamma;
-  font-family: $font-text;
-  font-weight: $weight-bold;
-  line-height: 42px;
-  letter-spacing: 0;
-  color: $color-text-alpha;
-  border-bottom: $border-style;
-}
-
-.table-inner span {
-  float: right;
-  font-weight: $weight-light;
-  color: $color-text-gamma;
-}
-
-.third-column h2 {
-  font-size: $font-size-gamma;
-  font-weight: $weight-bold;
-  line-height: 42px;
-  letter-spacing: 0;
-  color: $color-text-alpha;
-}
-
-.table img {
-  margin-bottom: 55px;
+@media (max-width: 768px) {
+  .chart .row .col-md-10 .row .first-column {
+    margin-bottom: 0;
+  }
+  .chart .row .col-md-10 .row .second-column {
+    margin-top: 0;
+  }
+  .date .row .col-md-5 .form-group .startDate,
+  .date .row .col-md-5 .form-group .endDate,
+  .date .row .col-md-1 .btn-one {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
