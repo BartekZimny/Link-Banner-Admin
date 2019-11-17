@@ -1,0 +1,25 @@
+.personal-input {
+  font-size: $font-size-gamma;
+  line-height: 42px;
+  width: 250px;
+  height: 40px;
+  margin: 30px 15px;
+  border: $border-style;
+  border-radius: 3px;
+}
+
+#login_name {
+  padding-left: 40px;
+  background-image: url(/images/icons/login.svg);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}
+
+#password {
+  padding-left: 45px;
+  background-image: url(/images/icons/password.svg);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}

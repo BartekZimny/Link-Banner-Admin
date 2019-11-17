@@ -72,10 +72,16 @@ function openModal(modal) {
   document.querySelector(modal).classList.add('show');
 }
 
+// Modals - QUIT MODAL
 document.getElementById('go_quit').addEventListener('click', function() {
   openModal('#modal_quit');
 });
 
 document.getElementById('go_site').addEventListener('click', function() {
   window.location.replace('https://github.com/TheWizard0f0z/');
+});
+
+// Modals - LOGIN MODAL
+document.getElementById('go_login').addEventListener('click', function() {
+  openModal('#modal_login');
 });
