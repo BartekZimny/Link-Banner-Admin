@@ -26,6 +26,10 @@
   padding-left: 10px;
 }
 
+.sorter:hover {
+  background-color: $color-background;
+}
+
 @media (max-width: 1200px) {
   .table .details-table {
     line-height: 30px;

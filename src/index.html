@@ -318,7 +318,7 @@
                 <th>Signups</th>
                 <th>FTD</th>
                 <th>Depositors</th>
-                <th>Deposits ($)<span class="icon-arrow-down"></span></th>
+                <th class="sorter">Deposits ($)<span class="icon-arrow-down"></span></th>
                 <th>Payout ($)</th>
                 <th>Turnover</th>
                 <th>Deal</th>
@@ -743,6 +743,111 @@
         </div>
       </div>
       <!--PAYOUT-->
+      <div class="payput subpage hidden" id="payout-section">
+        <div class="payout-history">
+          <!--TITLE-->
+          <div class="header">
+            <h2>Detail statistic</h2>
+          </div>
+          <!--CALENDAR-->
+          <div class="date">
+            <div class="row">
+              <div class="col-md-5">
+                <form id="form" name="form" class="form-inline">
+                  <div class="row form-group">
+                    <label class="startDate" for="startDate"><input id="startDate" name="startDate" type="text" class="form-control"/><span class="icon-calendar"></span></label>
+                    <label class="endDate" for="endDate"><input id="endDate" name="endDate" type="text" class="form-control"/><span class="icon-calendar"></span></label>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-1">
+                <button class="btn btn-one" type="reset"><span class="icon-refresh"></span></button>
+              </div>
+            </div>
+          </div>
+          <!--TABLE-->
+          <div class="table">
+            <table class="details-table">
+              <thead>
+                <tr class="details-title">
+                  <th class="sorter">Date<span class="icon-arrow-down"></span></th>
+                  <th>Amount ($)</th>
+                  <th>Deal</th>
+                  <th>Account</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="details-data">
+                  <td data-label="Date">17/08/02 (12:58)</td>
+                  <td data-label="Amount ($)">34,425.00</td>
+                  <td data-label="Deal">cpl (200)</td>
+                  <td data-label="Account">bank</td>
+                </tr>
+                <tr class="details-data">
+                  <td data-label="Date">15/08/02 (12:58)</td>
+                  <td data-label="Amount ($)">29,436.00</td>
+                  <td data-label="Deal">cpl (200)</td>
+                  <td data-label="Account">bank</td>
+                </tr>
+                <tr class="details-data">
+                  <td data-label="Date">17/08/02 (12:58)</td>
+                  <td data-label="Amount ($)">34,425.00</td>
+                  <td data-label="Deal">cpl (200)</td>
+                  <td data-label="Account">bank</td>
+                </tr>
+                <tr class="details-data">
+                  <td data-label="Date">15/08/02 (12:58)</td>
+                  <td data-label="Amount ($)">29,436.00</td>
+                  <td data-label="Deal">cpl (200)</td>
+                  <td data-label="Account">bank</td>
+                </tr>
+                <tr class="details-data">
+                  <td data-label="Date">17/08/02 (12:58)</td>
+                  <td data-label="Amount ($)">34,425.00</td>
+                  <td data-label="Deal">cpl (200)</td>
+                  <td data-label="Account">bank</td>
+                </tr>
+                <tr class="details-data">
+                  <td data-label="Date">15/08/02 (12:58)</td>
+                  <td data-label="Amount ($)">29,436.00</td>
+                  <td data-label="Deal">cpl (200)</td>
+                  <td data-label="Account">bank</td>
+                </tr>
+                <tr class="details-data">
+                  <td data-label="Date">17/08/02 (12:58)</td>
+                  <td data-label="Amount ($)">34,425.00</td>
+                  <td data-label="Deal">cpl (200)</td>
+                  <td data-label="Account">bank</td>
+                </tr>
+                <tr class="details-data">
+                  <td data-label="Date">15/08/02 (12:58)</td>
+                  <td data-label="Amount ($)">29,436.00</td>
+                  <td data-label="Deal">cpl (200)</td>
+                  <td data-label="Account">bank</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--PAGINATION-->
+          <div class="pagination">
+            <a href="#" class="disabled"><span class="icon-arrow-left"></span></a>
+            <ul>
+              <li class="current arrow"><a href="#1">1</a></li>
+              <li><a href="#2">2</a></li>
+              <li><a href="#3">3</a></li>
+              <li><a href="#4">4</a></li>
+              <li><a href="#5">5</a></li>
+              <li><a href="#6">6</a></li>
+              <li><a href="#7">7</a></li>
+              <li><a href="#8">8</a></li>
+              <li><a href="#9">9</a></li>
+              <li><a href="#10">…</a></li>
+              <li><a href="#41">41</a></li>
+            </ul>
+            <a href="#2" class="arrow"><span class="icon-arrow-right"></span></a>
+          </div>
+        </div>
+      </div>
       <!--POSTBACK-->
     </section>
 

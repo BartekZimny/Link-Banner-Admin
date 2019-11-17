@@ -1,6 +1,7 @@
 /* date */
 .general-statistic .date,
-.details-statistic .date {
+.details-statistic .date,
+.payout-history {
   border-bottom: $border-style;
 
   .row {
@@ -17,7 +18,8 @@
 }
 
 .general-statistic .date .row .form-group,
-.details-statistic .date .row .form-group {
+.details-statistic .date .row .form-group,
+.payout-history .date .row .form-group {
   .startDate,
   .endDate {
     margin-top: 30px;
