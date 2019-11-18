@@ -29,14 +29,11 @@
       color: $color-text-alpha;
     }
 
-    .personal-input {
+    .main-input {
       justify-content: space-around;
       padding-left: 20px;
       padding-right: 20px;
-      border: $border-style;
-      border-radius: 3px;
       width: 450px;
-      height: 40px;
       margin: 10px 0;
     }
   }
@@ -52,7 +49,7 @@
       text-align: center;
     }
 
-    .personal-input {
+    .main-input {
       margin-top: 0;
       width: 451px;
     }

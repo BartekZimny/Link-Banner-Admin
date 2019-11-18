@@ -5,13 +5,13 @@
   color: $color-light;
   position: fixed;
   z-index: 2;
-  transition: all 0.5s;
+  transition: $transition;
   top: 0;
 }
 
 .sidebar.toggled {
   width: 60px;
-  transition: all 0.5s;
+  transition: $transition;
 }
 
 /* MENU */

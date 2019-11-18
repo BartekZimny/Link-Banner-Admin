@@ -90,3 +90,8 @@ document.getElementById('go_login').addEventListener('click', function() {
 document.getElementById('go_chat').addEventListener('click', function() {
   openModal('#modal_chat');
 });
+
+// Modals - ADD URL
+document.getElementById('go_addurl').addEventListener('click', function() {
+  openModal('#modal_addurl');
+});

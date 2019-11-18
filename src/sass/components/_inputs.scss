@@ -1,10 +1,15 @@
-.personal-input {
+.main-input {
   font-size: $font-size-gamma;
   line-height: 42px;
   height: 40px;
   margin: 30px 15px;
   border: $border-style;
   border-radius: 3px;
+
+  &:hover {
+    border-color: $color-text-gamma;
+    transition: $transition;
+  }
 }
 
 #login_name {
@@ -32,4 +37,12 @@
   background-position: 10px center;
   background-repeat: no-repeat;
   background-size: 17px;
+}
+
+#scheme_name,
+#generated_link {
+  margin: 0;
+  width: 100%;
+  padding-left: 10px;
+  font-size: $font-size-delta;
 }

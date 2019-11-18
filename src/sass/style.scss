@@ -6,12 +6,14 @@
 
 /* Components */
 @import "components/buttons";
+@import "components/checkbox";
 @import "components/datepicker";
 @import "components/header";
+@import "components/inputs";
 @import "components/modals";
 @import "components/pagination";
-@import "components/personal_input";
 @import "components/rangeslider";
+@import "components/selects";
 @import "components/table";
 
 /* Sections */
@@ -24,6 +26,7 @@
 @import "sections/payout-history";
 @import "sections/personaldata-form";
 @import "sections/modal_chat";
+@import "sections/modal_add-url";
 
 /* Pages / Views */
 @import "pages/dashboard";
