@@ -44,7 +44,8 @@
 
 #modal_login,
 #modal_chat,
-#modal_addurl {
+#modal_addurl,
+#modal_addbanner {
   .icon-close {
     cursor: pointer;
     vertical-align: middle;
@@ -52,11 +53,72 @@
   }
 }
 
-#modal_addurl {
+#modal_addurl,
+#modal_addbanner {
   width: 100%;
+}
 
-  .main-checkbox {
-    height: auto;
-    overflow: auto;
+#modal_addurl .main-checkbox {
+  height: auto;
+  overflow: auto;
+}
+
+#modal_addbanner .main-checkbox {
+  height: 320px;
+}
+
+@media (max-width: 768px) {
+  #modal_chat {
+    width: 100%;
+
+    h2 {
+      padding-left: 0;
+      font-size: $font-size-eta;
+    }
+
+    .chat-avatar {
+      .userpic {
+        height: 55px;
+        width: 55px;
+      }
+
+      .user-status {
+        padding-top: 0;
+      }
+    }
+
+    .message-1,
+    .message-2 {
+      margin-left: 0;
+
+      p.message-their,
+      p.message-me {
+        max-width: 240px;
+      }
+    }
+
+    .main-input,
+    .btn {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #modal_quit {
+    h2 {
+      font-size: $font-size-delta;
+    }
+
+    .btn-modal {
+      margin: 15px auto;
+    }
+  }
+
+  #modal_addurl,
+  #modal_addbanner {
+    .btn-modal {
+      margin: 15px auto;
+    }
   }
 }

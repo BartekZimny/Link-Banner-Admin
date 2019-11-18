@@ -152,7 +152,7 @@
               <div class="row links-inner">
                 <!--BUTTON-->
                 <div class="col-md-6 button">
-                  <button class="btn btn-two" type="button" id="go_addurl"><span>+ add new</span></button>
+                  <button class="btn btn-two" type="button" id="go_addurl_1"><span>+ add new</span></button>
                 </div>
                 <!--LINKS TABLE-->
                 <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
@@ -277,7 +277,7 @@
                 </div>
                 <!--BUTTON-->
                 <div class="col-md-6 button">
-                  <button class="btn btn-two" type="button" id="go_addurl"><span>+ add new</span></button>
+                  <button class="btn btn-two" type="button" id="go_addurl_2"><span>+ add new</span></button>
                 </div>
               </div>
             </div>
@@ -466,7 +466,7 @@
               <div class="row links-inner">
                 <!--BUTTON-->
                 <div class="col-md-6 button">
-                  <button class="btn btn-two" type="button" id="go_addurl"><span>+ add new</span></button>
+                  <button class="btn btn-two" type="button" id="go_addurl_3"><span>+ add new</span></button>
                 </div>
                 <!--LINKS TABLE-->
                 <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
@@ -591,7 +591,7 @@
                 </div>
                 <!--BUTTON-->
                 <div class="col-md-6 button">
-                  <button class="btn btn-two" type="button" id="go_addurl"><span>+ add new</span></button>
+                  <button class="btn btn-two" type="button" id="go_addurl_4"><span>+ add new</span></button>
                 </div>
               </div>
             </div>
@@ -611,7 +611,7 @@
               <div class="row links-inner">
                 <!--BUTTON-->
                 <div class="col-md-6 button">
-                  <button class="btn btn-two" type="button"><span>+ add new</span></button>
+                  <button class="btn btn-two" type="button" id="go_addbanner_1"><span>+ add new</span></button>
                 </div>
                 <!--LINKS TABLE-->
                 <div class="col-sm-9 col-md-12 col-lg-8 links-table-inner">
@@ -688,7 +688,7 @@
                 </div>
                 <!--BUTTON-->
                 <div class="col-md-6 button">
-                  <button class="btn btn-two" type="button"><span>+ add new</span></button>
+                  <button class="btn btn-two" type="button" id="go_addbanner_2"><span>+ add new</span></button>
                 </div>
               </div>
             </div>
@@ -986,7 +986,7 @@ subid =%p%"></textarea>
           <h2>Online chat with your personal manager<span class="icon-close js--close-modal"></span></h2>
         </div>
         <div class="chat-avatar row">
-          <img src="images/userpic.png" alt="manager">
+          <img src="images/userpic.png" class="userpic" alt="manager">
           <div class="user-status">
             <span class="user-name">Mikhael E.</span>
             <br>
@@ -1014,14 +1014,14 @@ subid =%p%"></textarea>
         <div class="header">
           <h2>Add url<span class="icon-close js--close-modal"></span></h2>
         </div>
-        <div class="row addurl-inputs">
+        <div class="row add-inputs">
           <div class="col-md-5">
-            <p class="addurl-title">Scheme name</p>
+            <p class="add-title">Scheme name</p>
             <input class="main-input" id="scheme_name" type="text" placeholder="Name" required />
           </div>
           <div class="col-md-5">
-            <p class="addurl-title">Compain</p>
-            <select class="main-select" id="addurl-select" name="add-select">
+            <p class="add-title">Compain</p>
+            <select class="main-select" id="add-select" name="add-select">
               <option value="opt">Select compain</option>
               <option value="opt">Select compain</option>
               <option value="opt">Select compain</option>
@@ -1030,104 +1030,60 @@ subid =%p%"></textarea>
             </select>
           </div>
           <div class="col-md-2">
-            <p class="addurl-title">Language</p>
-            <select class="main-select" id="addurl-select" name="addurl-language">
+            <p class="add-title">Language</p>
+            <select class="main-select" id="add-select" name="addurl-language">
               <option value="opt">EN</option>
               <option value="opt">PL</option>
-              <option value="opt">GER</option>
+              <option value="opt">DE</option>
               <option value="opt">FR</option>
               <option value="opt">ES</option>
             </select>
           </div>
         </div>
-        <div class="addurl-info">
+        <div class="ad-info">
           <p class="add-title">Select websites</p>
         </div>
         <form>
-          <div class="row addurl-checkbox">
+          <div class="row add-checkbox">
             <div class="col-md-4">
             <div class="main-checkbox">
-              <label class="checkbox-container">Landing page Money
+              <label class="checkbox-container">Landing page Money<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">LP Your choise
+              <label class="checkbox-container">LP Your choise<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">LP Wallet
+              <label class="checkbox-container">LP Wallet<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">E-Shop 01
+              <label class="checkbox-container">E-Shop 01<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Toy Store
+              <label class="checkbox-container">Toy Store<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Book Store
+              <label class="checkbox-container">Book Store<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Charity
+              <label class="checkbox-container">Charity<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">LP Icons
+              <label class="checkbox-container">LP Icons<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Templates Store
+              <label class="checkbox-container">Templates Store<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Random text
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-            </div>
-            </div>
-            <div class="col-md-4">
-            <div class="main-checkbox">
-              <label class="checkbox-container">Mobile app
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">LP Senator free signals
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">LP DE Your choise
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">Invest wisely
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">Toy Store LP Sign up page
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">Senator Account types
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">Senator Mobile app
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">Senator Store
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">Senator April Promo
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox-container">Language Learning LP
+              <label class="checkbox-container">Random text<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
@@ -1135,43 +1091,87 @@ subid =%p%"></textarea>
             </div>
             <div class="col-md-4">
             <div class="main-checkbox">
-              <label class="checkbox-container">Your second site
+              <label class="checkbox-container">Mobile app<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Your second LP
+              <label class="checkbox-container">LP Senator free signals<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Landing page Money
+              <label class="checkbox-container">LP DE Your choise<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">LP Your choise
+              <label class="checkbox-container">Invest wisely<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">LP Wallet
+              <label class="checkbox-container">Toy Store LP Sign up page<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">E-Shop 01
+              <label class="checkbox-container">Senator Account types<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Toy Store
+              <label class="checkbox-container">Senator Mobile app<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Book Store
+              <label class="checkbox-container">Senator Store<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">Mobile app
+              <label class="checkbox-container">Senator April Promo<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
-              <label class="checkbox-container">LP Senator free signals
+              <label class="checkbox-container">Language Learning LP<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="main-checkbox">
+              <label class="checkbox-container">Your second site<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Your second LP<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Landing page Money<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">LP Your choise<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">LP Wallet<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">E-Shop 01<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Toy Store<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Book Store<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Mobile app<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">LP Senator free signals<span class="icon-show"></span>
                 <input type="checkbox">
                 <span class="checkmark"></span>
               </label>
@@ -1179,12 +1179,183 @@ subid =%p%"></textarea>
             </div>
           </div>
         </form>
-        <div class="row addurl-generation">
+        <div class="row add-generation">
           <div class="col-md-7">
             <input class="main-input" id="generated_link" type="text" placeholder="Generated link">
           </div>
           <div class="col-md-5">
-            <div class="row addurl-buttons">
+            <div class="row add-buttons">
+              <button class="btn btn-three btn-modal" type="button"><span class="icon-links"></span><span>Copy link</span></button>
+              <button class="btn btn-two btn-modal" type="button"><span>Save</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--ADD BANNER-->
+      <div class="modal" id="modal_addbanner">
+        <div class="header">
+          <h2>Add banners<span class="icon-close js--close-modal"></span></h2>
+        </div>
+        <div class="row add-inputs">
+          <div class="col-md-5">
+            <p class="add-title">Scheme name</p>
+            <input class="main-input" id="scheme_name" type="text" placeholder="Name" required />
+          </div>
+          <div class="col-md-5">
+            <p class="add-title">Compain</p>
+            <select class="main-select" id="add-select" name="add-select">
+              <option value="opt">Select compain</option>
+              <option value="opt">Select compain</option>
+              <option value="opt">Select compain</option>
+              <option value="opt">Select compain</option>
+              <option value="opt">Select compain</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <p class="add-title">Language</p>
+            <select class="main-select" id="add-select" name="addbanner-language">
+              <option value="opt">EN</option>
+              <option value="opt">PL</option>
+              <option value="opt">DE</option>
+              <option value="opt">FR</option>
+              <option value="opt">ES</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <p class="add-title">Weight-height</p>
+            <select class="main-select" id="add-select" name="add-select">
+              <option value="opt">Select</option>
+              <option value="opt">Select</option>
+              <option value="opt">Select</option>
+              <option value="opt">Select</option>
+              <option value="opt">Select</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <p class="add-title">Design</p>
+            <select class="main-select" id="add-select" name="add-select">
+              <option value="opt">Select</option>
+              <option value="opt">Select</option>
+              <option value="opt">Select</option>
+              <option value="opt">Select</option>
+              <option value="opt">Select</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <p class="add-title">File type</p>
+            <select class="main-select" id="add-select" name="add-select">
+              <option value="opt">All</option>
+              <option value="opt">All</option>
+              <option value="opt">All</option>
+              <option value="opt">All</option>
+              <option value="opt">All</option>
+            </select>
+          </div>
+        </div>
+        <form>
+          <div class="row add-checkbox">
+            <div class="col-md-6">
+              <div class="ad-info">
+                <p class="add-title">Select banners</p>
+              </div>
+              <div class="main-checkbox">
+              <label class="checkbox-container">Banner main<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Sign up banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Left banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Right banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Bottom banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Long banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Personal cabinet banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Popup banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Templates banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Random banner<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="ad-info">
+                <p class="add-title">Select websites</p>
+              </div>
+            <div class="main-checkbox">
+              <label class="checkbox-container">Landing page Money<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">LP Your choise<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">LP Wallet<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">E-Shop 01<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Toy Store<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Book Store<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Charity<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">LP Icons Store<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Promo Store<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label class="checkbox-container">Random Store<span class="icon-show"></span>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            </div>
+          </div>
+        </form>
+        <div class="row add-generation">
+          <div class="col-md-7">
+            <input class="main-input" id="generated_link" type="text" placeholder="Generated link">
+          </div>
+          <div class="col-md-5">
+            <div class="row add-buttons">
               <button class="btn btn-three btn-modal" type="button"><span class="icon-links"></span><span>Copy link</span></button>
               <button class="btn btn-two btn-modal" type="button"><span>Save</span></button>
             </div>

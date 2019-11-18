@@ -1,0 +1,49 @@
+.add-inputs {
+  padding-bottom: 36px;
+  border-bottom: $border-style;
+}
+
+.add-info {
+  padding-left: 15px;
+}
+
+.add-title {
+  margin-top: 32px;
+  color: $color-text-delta;
+}
+
+.add-checkbox {
+  border-bottom: $border-style;
+  .checkbox-container {
+    margin: 0;
+    .icon-show {
+      float: right;
+      color: $color-graph-beta;
+      display: none;
+      margin-right: 15px;
+      &:hover {
+        color: $color-graph-alpha;
+      }
+    }
+    &:hover .icon-show {
+      display: inline-block;
+    }
+  }
+}
+
+.add-generation #generated_link {
+  margin-top: 30px;
+}
+
+.add-generation .add-buttons {
+  justify-content: flex-end;
+
+  .btn {
+    margin-bottom: 0;
+
+    .icon-links {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}

@@ -92,6 +92,23 @@ document.getElementById('go_chat').addEventListener('click', function() {
 });
 
 // Modals - ADD URL
-document.getElementById('go_addurl').addEventListener('click', function() {
+document.getElementById('go_addurl_1').addEventListener('click', function() {
   openModal('#modal_addurl');
+});
+document.getElementById('go_addurl_2').addEventListener('click', function() {
+  openModal('#modal_addurl');
+});
+document.getElementById('go_addurl_3').addEventListener('click', function() {
+  openModal('#modal_addurl');
+});
+document.getElementById('go_addurl_4').addEventListener('click', function() {
+  openModal('#modal_addurl');
+});
+
+// Modals - ADD BANNER
+document.getElementById('go_addbanner_1').addEventListener('click', function() {
+  openModal('#modal_addbanner');
+});
+document.getElementById('go_addbanner_2').addEventListener('click', function() {
+  openModal('#modal_addbanner');
 });

@@ -56,6 +56,14 @@ div:not(.links-table-inner) + .links-table-inner {
   color: $color-graph-alpha;
 }
 
+@media (max-width: 480px) {
+  .general-links .links .links-inner .links-table-inner a,
+  .links-links .links .links-inner .links-table-inner a,
+  .banners-links .links .links-inner .links-table-inner a {
+    font-size: $font-size-dzeta;
+  }
+}
+
 @media (max-width: 768px) {
   .general-links .links .links-inner .links-table-inner,
   .links-links .links .links-inner .links-table-inner,
