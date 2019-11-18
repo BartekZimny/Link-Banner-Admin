@@ -11,16 +11,18 @@
 @import "components/modals";
 @import "components/pagination";
 @import "components/personal_input";
+@import "components/rangeslider";
 @import "components/table";
 
 /* Sections */
 @import "sections/topbar";
 @import "sections/sidebar";
-@import "sections/general-statistic";
 @import "sections/general_links_banners-links";
+@import "sections/general-statistic";
 @import "sections/details-statistic";
-@import "sections/personaldata-form";
+@import "sections/new_postback";
 @import "sections/payout-history";
+@import "sections/personaldata-form";
 @import "sections/modal_chat";
 
 /* Pages / Views */

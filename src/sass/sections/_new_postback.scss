@@ -1,0 +1,172 @@
+.new-postback {
+  background-color: $color-light;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .postback-info {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 48px;
+  }
+
+  form div:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  .postback-inputs {
+    color: $color-text-alpha;
+    text-align: left;
+    margin-bottom: 48px;
+
+    .postback-title {
+      font-size: $font-size-gamma;
+      font-weight: $weight-bold;
+      span {
+        color: red;
+      }
+    }
+
+    .postback-text {
+      width: 100%;
+      border: $border-style;
+      border-radius: 3px;
+      font-size: $font-size-delta;
+      padding-top: 18px;
+      padding-left: 18px;
+      resize: none;
+      &:hover {
+        border-color: $color-text-gamma;
+        transition: $transition;
+      }
+    }
+
+    .postback-select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 40px;
+      padding-left: 10px;
+      border: $border-style;
+      border-radius: 3px;
+      font-size: $font-size-delta;
+      cursor: pointer;
+      background-image: url(/images/icons/arrow-down.svg);
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+      background-size: 15px;
+      &:hover {
+        border-color: $color-text-gamma;
+        transition: $transition;
+      }
+    }
+  }
+  .button {
+    text-align: right;
+  }
+}
+
+// Placeholder
+::placeholder {
+  color: $color-text-alpha;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-text-alpha;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-text-alpha;
+}
+
+.postback-input-right {
+  border-top: $border-style;
+  border-bottom: $border-style;
+  .range-label {
+    width: 90%;
+    margin: 50px auto 5px;
+    font-size: $font-size-delta;
+    .label-right {
+      float: right;
+    }
+  }
+}
+
+.postback-input-left {
+  border-top: $border-style;
+  border-bottom: $border-style;
+  border-right: $border-style;
+  .postback-checkbox {
+    height: 160px;
+    overflow-y: scroll;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: $color-dark;
+    .checkbox-container {
+      display: block;
+      position: relative;
+      padding: 12px 0 12px 54px;
+      margin-right: 18px;
+      cursor: pointer;
+      font-size: $font-size-delta;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      &:hover {
+        background-color: $color-background;
+        transition: $transition;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        border: $border-style;
+        margin-top: 7px;
+        margin-left: 18px;
+        background-clip: $color-light;
+      }
+    }
+  }
+}
+
+.checkbox-container:hover .checkmark {
+  background-color: $color-light;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: $color-graph-gamma;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 10px;
+  height: 14px;
+  border: solid $color-light;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

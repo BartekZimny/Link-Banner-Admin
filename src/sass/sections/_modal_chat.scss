@@ -2,9 +2,11 @@
   border-bottom: $border-style;
   text-align: left;
   padding: 15px;
+
   .user-status {
     padding-left: 18px;
     padding-top: 10px;
+
     .user-name {
       font-size: 28px;
     }
@@ -24,6 +26,7 @@
     border-radius: 3px;
     width: max-content;
   }
+
   .message-2 {
     color: $color-light;
     background-color: $color-text-beta;
@@ -31,6 +34,7 @@
     border-radius: 3px;
     width: max-content;
   }
+
   .message-their,
   .message-me {
     padding: 10px;

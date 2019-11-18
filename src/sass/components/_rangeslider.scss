@@ -1,0 +1,51 @@
+.rangeslider {
+  margin: 0 auto 100px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.rangeslider__fill {
+  background-color: $color-graph-alpha;
+}
+
+.rangeslider--horizontal {
+  width: 90%;
+}
+
+.rangeslider--horizontal .rangeslider__handle {
+  top: 15px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid $color-graph-alpha;
+}
+
+.rangeslider__handle {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-border-box-shadow: none;
+  -webkit-border-box-shadow: none;
+  box-shadow: none;
+  height: 0;
+  width: 0;
+  border: none;
+}
+
+.rangeslider__handle::after {
+  display: none;
+}
+
+.rangeslider__value-bubble {
+  border: $border-style;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  padding: 5px;
+  width: 50px;
+  margin-left: -25px;
+  position: absolute;
+  top: 50px;
+  text-align: center;
+  color: $color-dark;
+}
