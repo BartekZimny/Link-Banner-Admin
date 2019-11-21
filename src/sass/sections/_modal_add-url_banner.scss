@@ -14,17 +14,21 @@
 
 .add-checkbox {
   border-bottom: $border-style;
+
   .checkbox-container {
     margin: 0;
+
     .icon-show {
       float: right;
       color: $color-graph-beta;
       display: none;
       margin-right: 15px;
+
       &:hover {
         color: $color-graph-alpha;
       }
     }
+
     &:hover .icon-show {
       display: inline-block;
     }

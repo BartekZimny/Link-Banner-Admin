@@ -1,6 +1,7 @@
 {
-  "name": "task-runner",
+  "name": "fer-07-project",
   "version": "1.0.0",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
@@ -18,6 +19,11 @@
     "build:autoprefixer": "globstar autoprefixer-cli \"dist/css/*.css\"",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o dist/css src/sass",
+    "build-docs": "npm-run-all build:docs:* test",
+    "build:docs:clean": "mkdirp docs && rd /s /q docs && mkdirp docs",
+    "build:docs:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" docs",
+    "build:docs:sass": "node-sass --output-style compact -o docs/css src/sass",
+    "build:docs:autoprefixer": "globstar autoprefixer-cli \"docs/css/*.css\"",
     "watch": "npm-run-all build build-dev -p watch:*",
     "watch:browsersync": "browser-sync start --server dist --files \"dist/**/*\"",
     "watch:sassprefixer": "onchange \"src/sass/**/*.scss\" -- npm run build-dev",
@@ -30,25 +36,15 @@
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
-    "copyfiles": "^2.1.1",
-    "editorconfig": "^0.15.3",
-    "eslint": "^6.5.1",
+    "copyfiles": "^2.1.0",
+    "eslint": "^5.14.1",
     "globstar": "^1.0.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
     "nu-html-checker": "^0.1.0",
     "onchange": "^5.2.0",
-    "stylelint": "^11.0.0",
-    "stylelint-scss": "^3.11.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BartekZimny/Link-Banner-Admin.git"
-  },
-  "bugs": {
-    "url": "https://github.com/BartekZimny/Link-Banner-Admin/issues"
-  },
-  "homepage": "https://github.com/BartekZimny/Link-Banner-Admin#readme",
-  "description": ""
+    "stylelint": "^9.10.1",
+    "stylelint-scss": "^3.5.4"
+  }
 }
