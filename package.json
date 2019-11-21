@@ -12,7 +12,7 @@
     "test": "npm-run-all test:*",
     "test:js": "eslint --fix src/js/",
     "test:scss": "stylelint --fix src/sass/",
-    "build": "npm-run-all build:* test",
+    "build": "npm-run-all build:* build-* test",
     "build:clean": "mkdirp dist && rd /s /q dist && mkdirp dist",
     "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
     "build:sass": "node-sass --output-style compact -o dist/css src/sass",
@@ -24,7 +24,7 @@
     "build:docs:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" docs",
     "build:docs:sass": "node-sass --output-style compact -o docs/css src/sass",
     "build:docs:autoprefixer": "globstar autoprefixer-cli \"docs/css/*.css\"",
-    "watch": "npm-run-all build build-dev -p watch:*",
+    "watch": "npm-run-all build -p watch:*",
     "watch:browsersync": "browser-sync start --server dist --files \"dist/**/*\"",
     "watch:sassprefixer": "onchange \"src/sass/**/*.scss\" -- npm run build-dev",
     "watch:copy": "onchange -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" -- copyfiles -a -u 1 {{changed}} dist"
