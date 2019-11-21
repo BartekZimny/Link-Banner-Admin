@@ -1,6 +1,6 @@
 # Administration-panel
 
-[Click me!](https://thewizard0f0z.github.io/Administration-panel/)
+[Click me!](https://bartekzimny.github.io/Link-Banner-Admin/)
 
 ## General info
 
