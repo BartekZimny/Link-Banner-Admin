@@ -140,23 +140,17 @@ document.getElementById('go_chat').addEventListener('click', function() {
 });
 
 // Modals - ADD URL
-document.getElementById('go_addurl_1').addEventListener('click', function() {
-  openModal('#modal_addurl');
-});
-document.getElementById('go_addurl_2').addEventListener('click', function() {
-  openModal('#modal_addurl');
-});
-document.getElementById('go_addurl_3').addEventListener('click', function() {
-  openModal('#modal_addurl');
-});
-document.getElementById('go_addurl_4').addEventListener('click', function() {
-  openModal('#modal_addurl');
-});
+const addUrlButtons = document.querySelectorAll('.go_addurl');
+for (let addUrlButton of addUrlButtons) {
+  addUrlButton.addEventListener('click', function() {
+    openModal('#modal_addurl');
+  });
+}
 
 // Modals - ADD BANNER
-document.getElementById('go_addbanner_1').addEventListener('click', function() {
-  openModal('#modal_addbanner');
-});
-document.getElementById('go_addbanner_2').addEventListener('click', function() {
-  openModal('#modal_addbanner');
-});
+const addBannerButtons = document.querySelectorAll('.go_addbanner');
+for (let addBannerButton of addBannerButtons) {
+  addBannerButton.addEventListener('click', function() {
+    openModal('#modal_addbanner');
+  });
+}
