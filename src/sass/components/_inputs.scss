@@ -46,3 +46,22 @@
   padding-left: 10px;
   font-size: $font-size-delta;
 }
+
+#daterange {
+  height: 40px;
+  margin: 30px;
+  padding-left: 30px;
+  padding-right: 60px;
+  background-image: url(/images/icons/calendar.svg);
+  background-position: 250px center;
+  background-repeat: no-repeat;
+  background-size: 17px;
+}
+
+@media (max-width: 480px) {
+  #daterange {
+    background-image: none;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}

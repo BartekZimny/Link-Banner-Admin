@@ -141,6 +141,7 @@ document.getElementById('go_chat').addEventListener('click', function() {
 
 // Modals - ADD URL
 const addUrlButtons = document.querySelectorAll('.go_addurl');
+
 for (let addUrlButton of addUrlButtons) {
   addUrlButton.addEventListener('click', function() {
     openModal('#modal_addurl');
@@ -149,8 +150,49 @@ for (let addUrlButton of addUrlButtons) {
 
 // Modals - ADD BANNER
 const addBannerButtons = document.querySelectorAll('.go_addbanner');
+
 for (let addBannerButton of addBannerButtons) {
   addBannerButton.addEventListener('click', function() {
     openModal('#modal_addbanner');
   });
 }
+
+// RANGESLIDER
+var valueBubble = '<output class="rangeslider__value-bubble" />';
+
+function updateValueBubble(pos, value, context) {
+  pos = pos || context.position;
+  value = value || context.value;
+  var $valueBubble = $('.rangeslider__value-bubble', context.$range);
+  var tempPosition = pos + context.grabPos;
+  var position = tempPosition <= context.handleDimension ? context.handleDimension : tempPosition >= context.maxHandlePos ? context.maxHandlePos : tempPosition;
+
+  if ($valueBubble.length) {
+    $valueBubble[0].style.left = Math.ceil(position) + 'px';
+    $valueBubble[0].innerHTML = value;
+  }
+}
+
+$('input[type="range"]').rangeslider({
+  polyfill: false,
+  onInit: function() {
+    this.$range.append($(valueBubble));
+    updateValueBubble(null, null, this);
+  },
+  onSlide: function(pos, value) {
+    updateValueBubble(pos, value, this);
+  }
+});
+
+// DATERANGEPICKER
+$(function() {
+  $('input[name="daterange"]').daterangepicker(
+    {
+      showDropdowns: true,
+      opens: 'center'
+    },
+    function(start, end, label) {
+      console.log('A new date selection was made: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    }
+  );
+});
