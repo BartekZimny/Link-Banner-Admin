@@ -126,7 +126,7 @@ document.getElementById('go_quit').addEventListener('click', function() {
 });
 
 document.getElementById('go_site').addEventListener('click', function() {
-  window.location.replace('https://github.com/TheWizard0f0z/');
+  window.location.replace('https://github.com/BartekZimny');
 });
 
 // Modals - LOGIN MODAL
