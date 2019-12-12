@@ -1,6 +1,7 @@
+
 .sidebar {
-  height: 100vh;
-  width: 250px;
+  height: 100%;
+  width: 100vh;
   background-color: $color-background-sidebar-alpha;
   color: $color-light;
   position: fixed;
@@ -94,7 +95,8 @@
 .toggled .menu-subpages-title,
 .toggled .menu-logo,
 .toggled .users-title,
-.toggled .user-name {
+.toggled .user-name,
+.toggled .bottom-sidebar {
   display: none;
 }
 
@@ -172,4 +174,274 @@
   .sidebar .users .users-title {
     display: none;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* profile */
+
+.profile {
+  font-size: $font-size-epsilon;
+  color: $color-graph-beta;
+  font-weight: $weight-light;
+  padding-top: 11px;
+  padding-bottom: 5px;
+}
+
+.icon-profile:before {
+  content: "\0056";
+  font-size: $font-size-gamma;
+  color: $color-text-beta;
+  margin-right: 15px;
+}
+
+/* quit */
+
+.quit {
+  padding-top: 21px;
+  padding-bottom: 15px;
+}
+
+.icon-quit:before {
+  content: "\0057";
+  font-size: $font-size-gamma;
+  color: $color-text-beta;
+}
+
+@media (max-width: 768px) {
+  .topbar ul li a {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .notification .dot {
+    top: 10px;
+    height: 7px;
+    width: 7px;
+  }
+
+  .icon-notification:before,
+  .icon-profile:before,
+  .icon-quit:before,
+  .icon-wallet:before {
+    font-size: $font-size-beta;
+  }
+
+  .dropdown .dropdown-content {
+    min-width: 153px;
+
+    a {
+      line-height: 25px;
+    }
+  }
+
+  li .dropbtn,
+  .dropdown-content {
+    font-size: $font-size-beta;
+  }
+
+  .icon-profile:before {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile-name {
+    display: none;
+  }
+
+  .icon-profile:before {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .topbar ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .notification .dot {
+    right: 10px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .topbar {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom-sidebar {
+  display: block;
+  padding: 20px 10px 0 10px;
+}
+
+
+
+.main-bottom-nav-container {
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+
+.main-bottom-nav-container-first-row {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.main-wallet-container:hover,
+.main-notification-container:hover,
+.main-personaldata-container:hover,
+.main-quit-container:hover {
+  background-color: #979797;
+}
+
+.main-wallet-container {
+  width: 75%;
+  float: left;
+}
+
+.main-wallet-first {
+  float: left;
+  text-align: center;
+  height: 59px;
+  width: 25%;
+  padding: 15px 0 0 38px;
+  
+}
+
+.main-wallet-second {
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 59px;
+  
+}
+
+.main-wallet-third {
+  float: left;
+  width: 25%;
+  height: 59px;
+  padding-top: 15px;
+}
+
+p.main-text-wallet {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.main-notification-container {
+  width: 25%;
+  height: 59px;
+  float: left;
+  border-left: 1px solid #ffffff;
+  position: relative;
+  padding: 15px 0 0 40px;
+}
+
+i.second.icon-circle {
+  color: #f58220;
+  line-height: 1.9;
+  font-size: 9px;
+  position: absolute;
+  top: 28%;
+  left: 49%;
+  
+}
+
+.main-bottom-nav-container-second-row {
+  width: 100%;
+  height: 60px;
+}
+
+.main-personaldata-container {
+  width: 75%;
+  float: left;
+}
+
+.main-personaldata {
+  float: left;
+  text-align: center;
+  height: 59px;
+  width: 30%;
+  padding: 15px 0 0 15px;
+}
+
+.main-person {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 15px;
+  width: 70%;
+  text-align: left;
+  color: #ffffff;
+}
+
+.main-quit-container {
+  width: 25%;
+  float: left;
+  height: 59px;
+  border-left: 1px solid #ffffff;
+  padding: 15px 0 0 40px;
 }
