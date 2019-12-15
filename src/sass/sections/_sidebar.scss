@@ -1,7 +1,7 @@
 
 .sidebar {
   height: 100%;
-  width: 100vh;
+  width: 250px;
   background-color: $color-background-sidebar-alpha;
   color: $color-light;
   position: fixed;
@@ -175,50 +175,13 @@
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*MOJE ZMIANY*/
 
 /* profile */
 
-.profile {
+.profile-sidebar {
   font-size: $font-size-epsilon;
-  color: $color-graph-beta;
+  color: $color-text-beta;
   font-weight: $weight-light;
   padding-top: 11px;
   padding-bottom: 5px;
@@ -302,42 +265,22 @@
   }
 }
 
-
 @media (max-width: 800px) {
   .topbar {
     display: none;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .bottom-sidebar {
   display: block;
   padding: 20px 10px 0 10px;
 }
 
-
+@media (min-width: 800px) {
+  .bottom-sidebar {
+    display: none;
+  }
+}
 
 .main-bottom-nav-container {
   width: 100%;
@@ -354,7 +297,7 @@
 .main-notification-container:hover,
 .main-personaldata-container:hover,
 .main-quit-container:hover {
-  background-color: #979797;
+  background-color: #3e3e3e;
 }
 
 .main-wallet-container {
@@ -368,7 +311,6 @@
   height: 59px;
   width: 25%;
   padding: 15px 0 0 38px;
-  
 }
 
 .main-wallet-second {
@@ -376,7 +318,6 @@
   text-align: center;
   width: 50%;
   height: 59px;
-  
 }
 
 .main-wallet-third {
@@ -406,8 +347,7 @@ i.second.icon-circle {
   font-size: 9px;
   position: absolute;
   top: 28%;
-  left: 49%;
-  
+  left: 44%;
 }
 
 .main-bottom-nav-container-second-row {
@@ -445,3 +385,4 @@ i.second.icon-circle {
   border-left: 1px solid #ffffff;
   padding: 15px 0 0 40px;
 }
+
